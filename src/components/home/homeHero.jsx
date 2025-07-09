@@ -9,12 +9,13 @@ export default function HomeHero() {
   return (
     <section
       style={{
-        background: "linear-gradient(135deg, #7b4b1a, #df865b, #ffb07c)",
-        padding: "4rem 1rem",
+        background: "#FAF7F2",  // Soft light beige
+        padding: "5rem 1rem 4rem",
         marginTop: "5rem",
-        color: "#ffffff",
-        borderRadius: "16px",
+        color: "#3e2712",  // Deep brown for spa feel
+        borderRadius: "24px",
         fontFamily: "'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif",
+        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.05)",
       }}
     >
       <motion.div
@@ -22,11 +23,12 @@ export default function HomeHero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         style={{
-          maxWidth: "1100px",
+          maxWidth: "1200px",
           margin: "0 auto",
           display: "flex",
           flexWrap: "wrap",
-          gap: "2rem",
+          gap: "3rem",
+          alignItems: "center",
         }}
       >
         {/* LEFT TEXT */}
@@ -35,67 +37,60 @@ export default function HomeHero() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          style={{ flex: "1 1 480px" }}
+          style={{ flex: "1 1 500px", padding: "0 1rem" }}
         >
           <motion.h1
             style={{
-              fontSize: "clamp(1.8rem, 5vw, 2.5rem)",
+              fontSize: "clamp(2rem, 5vw, 3rem)",
               marginBottom: "1.5rem",
-              lineHeight: 1.2,
-              fontWeight: 600,
+              lineHeight: 1.3,
+              fontWeight: 700,
+              color: "#3e2712",
             }}
           >
             Welcome to{" "}
             <span
               style={{
-                background: "linear-gradient(90deg, #f9d423, #fdd835, #f9d423)",
-                backgroundSize: "200% auto",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                display: "inline-block",
-                fontWeight: 700,
-                textShadow: "0 1px 8px rgba(255, 217, 0, 0.8)",
+                color: "#CBA135",  // Muted gold/amber
+                fontWeight: 800,
               }}
             >
-              SR Holistic Wellness
+              SR Holistic Wellness
             </span>
           </motion.h1>
 
           <p
             style={{
               maxWidth: "720px",
-              fontSize: "clamp(1rem, 2.5vw, 1.125rem)",
-              lineHeight: 1.6,
-              marginBottom: "2rem",
+              fontSize: "1.05rem",
+              lineHeight: 1.7,
+              color: "#5C3D2E",  // Soft brown for text
+              marginBottom: "2.5rem",
             }}
           >
-            Welcome to SR Holistic Wellness — a sanctuary where healing meets
-            luxury. With over 13 years of experience, we specialize in
-            personalized wellness therapies that blend traditional healing with
-            modern care. From rejuvenating massages and Ayurvedic treatments to
-            mind‑body practices and organic skincare, our holistic approach
-            nurtures your body, calms your mind, and revives your spirit.
+            SR Holistic Wellness is a sanctuary where healing meets luxury. With over 13 years of experience,
+            we offer personalized therapies blending traditional healing with modern care to rejuvenate your
+            body, calm your mind, and awaken your soul.
           </p>
 
-          {/* GALLERY BUTTON */}
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
             onClick={() => router.push("/services")}
             style={{
-              backgroundColor: "#f9d423",
-              color: "#4b2e13",
+              backgroundColor: "#88B04B",  // Sage green
+              color: "#ffffff",
               border: "none",
-              padding: "0.75rem 1.5rem",
-              borderRadius: "999px",
+              padding: "0.85rem 2rem",
+              borderRadius: "50px",
               fontSize: "1rem",
-              fontWeight: "bold",
+              fontWeight: 600,
               cursor: "pointer",
-              boxShadow: "0 4px 14px rgba(0,0,0,0.25)",
+              boxShadow: "0 6px 20px rgba(0,0,0,0.12)",
             }}
           >
-            Our Gallery →
+            Explore Our Services →
           </motion.button>
         </motion.div>
 
@@ -105,21 +100,21 @@ export default function HomeHero() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
-          style={{ flex: "1 1 400px" }}
+          style={{ flex: "1 1 450px", padding: "0 1rem" }}
         >
           <motion.div
-            whileHover={{ scale: 1.03, boxShadow: "0 10px 32px rgba(0,0,0,0.45)" }}
+            whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
             style={{
               position: "relative",
-              maxWidth: "420px",
+              maxWidth: "100%",
               height: "480px",
               overflow: "hidden",
-              borderRadius: "16px",
-              boxShadow: "0 8px 24px rgba(0, 0, 0, 0.35)",
+              borderRadius: "20px",
+              boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+              backgroundColor: "#fff",
             }}
           >
-            {/* VIDEO BACKGROUND */}
             <video
               autoPlay
               muted
@@ -131,9 +126,8 @@ export default function HomeHero() {
               Your browser does not support the video tag.
             </video>
 
-            {/* QUOTE WITH SLIDE + FADE */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               style={{
@@ -141,31 +135,31 @@ export default function HomeHero() {
                 top: "1rem",
                 left: "1rem",
                 right: "1rem",
-                textAlign: "center",
+                padding: "1rem 1.2rem",
+                borderRadius: "12px",
+                backgroundColor: "rgba(255, 255, 255, 0.92)",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
               }}
             >
               <div
                 style={{
-                  fontSize: "1.6rem",
-                  fontWeight: "bold",
-                  background: "linear-gradient(90deg, #66bb6a, #43a047)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  textShadow: "0 2px 6px rgba(0,0,0,0.3)",
+                  fontSize: "1.25rem",
+                  fontWeight: 700,
+                  color: "#3e2712",
                   marginBottom: "0.5rem",
+                  lineHeight: 1.4,
                 }}
               >
                 “Discover the Power of Holistic Living”
               </div>
               <div
                 style={{
-                  fontSize: "1rem",
-                  color: "#ffffff",
-                  textShadow: "0 1px 4px rgba(0,0,0,0.4)",
+                  fontSize: "0.95rem",
+                  color: "#5C3D2E",
+                  lineHeight: 1.6,
                 }}
               >
-                Where Every Experience Is Designed to Elevate Your Body,
-                Enlighten Your Mind, and Awaken Your Soul.
+                Every experience is designed to elevate your body, enlighten your mind, and awaken your soul.
               </div>
             </motion.div>
           </motion.div>
