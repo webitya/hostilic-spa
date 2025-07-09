@@ -50,7 +50,7 @@ const features = [
   },
 ];
 
-export default function partnerwithusholistictherapiesPage() {
+export default function PartnerWithUsHolisticTherapiesPage() {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function partnerwithusholistictherapiesPage() {
     <section
       style={{
         backgroundColor: "#3e2712",
-        padding: "10rem 1.5rem 3rem", // Top space added here
+        padding: "10rem 1.5rem 3rem",
         fontFamily: "'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif",
         color: "#ffffff",
         opacity: fadeIn ? 1 : 0,
@@ -136,4 +136,3 @@ export default function partnerwithusholistictherapiesPage() {
     </section>
   );
 }
-
