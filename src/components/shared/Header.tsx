@@ -122,7 +122,7 @@ export default function Header() {
               >
                 <PhoneIcon fontSize="small" />
               </motion.span>
-              +91‑9876543210
+              +91 6306366978
             </motion.a>
           </li>
         </ul>
