@@ -111,7 +111,7 @@ export default function Header() {
           {/* Phone Button */}
           <li>
             <motion.a
-              href="tel:+919876543210"
+              href="tel:+916306366978"
               className="flex items-center gap-2 bg-[#7b4b1a] text-white px-5 py-2 rounded-full font-semibold shadow-md hover:bg-[#5a3613] focus:outline-none whitespace-nowrap"
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}

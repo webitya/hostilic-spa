@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Section 3: Contact */}
         <div style={{ flex: "0 1 200px" }}>
           <h4 style={titleStyle}>Contact</h4>
-          <p style={{ margin: "0.5rem 0" }}>Phone: +91-9876543210</p>
+          <p style={{ margin: "0.5rem 0" }}>Phone: +91 6306366978</p>
           <p style={{ margin: "0.5rem 0" }}>Email: info@srwellness.com</p>
           <p style={{ margin: "0.5rem 0" }}>Location: Mumbai, India</p>
         </div>
