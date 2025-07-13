@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
 export default function HomeHero() {
@@ -9,19 +8,16 @@ export default function HomeHero() {
   return (
     <section
       style={{
-        background: "#FAF7F2",  // Soft light beige
+        background: "#FAF7F2",
         padding: "5rem 1rem 4rem",
         marginTop: "5rem",
-        color: "#3e2712",  // Deep brown for spa feel
+        color: "#3e2712",
         borderRadius: "24px",
         fontFamily: "'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif",
         boxShadow: "0 10px 30px rgba(0, 0, 0, 0.05)",
       }}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+      <div
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
@@ -32,14 +28,8 @@ export default function HomeHero() {
         }}
       >
         {/* LEFT TEXT */}
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          style={{ flex: "1 1 500px", padding: "0 1rem" }}
-        >
-          <motion.h1
+        <div style={{ flex: "1 1 500px", padding: "0 1rem" }}>
+          <h1
             style={{
               fontSize: "clamp(2rem, 5vw, 3rem)",
               marginBottom: "1.5rem",
@@ -51,20 +41,20 @@ export default function HomeHero() {
             Welcome to{" "}
             <span
               style={{
-                color: "#CBA135",  // Muted gold/amber
+                color: "#CBA135",
                 fontWeight: 800,
               }}
             >
               SR Holistic Wellness
             </span>
-          </motion.h1>
+          </h1>
 
           <p
             style={{
               maxWidth: "720px",
               fontSize: "1.05rem",
               lineHeight: 1.7,
-              color: "#5C3D2E",  // Soft brown for text
+              color: "#5C3D2E",
               marginBottom: "2.5rem",
             }}
           >
@@ -73,13 +63,10 @@ export default function HomeHero() {
             body, calm your mind, and awaken your soul.
           </p>
 
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
+          <button
             onClick={() => router.push("/services")}
             style={{
-              backgroundColor: "#88B04B",  // Sage green
+              backgroundColor: "#88B04B",
               color: "#ffffff",
               border: "none",
               padding: "0.85rem 2rem",
@@ -91,20 +78,12 @@ export default function HomeHero() {
             }}
           >
             Explore Our Services →
-          </motion.button>
-        </motion.div>
+          </button>
+        </div>
 
         {/* RIGHT VIDEO & QUOTE */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          viewport={{ once: true }}
-          style={{ flex: "1 1 450px", padding: "0 1rem" }}
-        >
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
+        <div style={{ flex: "1 1 450px", padding: "0 1rem" }}>
+          <div
             style={{
               position: "relative",
               maxWidth: "100%",
@@ -126,10 +105,7 @@ export default function HomeHero() {
               Your browser does not support the video tag.
             </video>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+            <div
               style={{
                 position: "absolute",
                 top: "1rem",
@@ -161,10 +137,10 @@ export default function HomeHero() {
               >
                 Every experience is designed to elevate your body, enlighten your mind, and awaken your soul.
               </div>
-            </motion.div>
-          </motion.div>
-        </motion.div>
-      </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
