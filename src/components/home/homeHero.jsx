@@ -64,7 +64,7 @@ export default function HomeHero() {
           </p>
 
           <button
-            onClick={() => router.push("/services")}
+            onClick={() => router.push("/holistic-therapies")}
             style={{
               backgroundColor: "#88B04B",
               color: "#ffffff",
