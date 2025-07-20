@@ -476,7 +476,7 @@ function TherapyCard({ therapy }) {
             </p>
             {/* Card Content (truncated) */}
             <p className="text-xs leading-relaxed text-gray-700 mb-3 flex-grow overflow-hidden">
-              {therapy.description.substring(0, 100)}...
+              {therapy.description.substring(0, 400)}...
             </p>
             {therapy.tags && therapy.tags.length > 0 && (
               <div className="flex flex-wrap gap-1.5 mb-3">
