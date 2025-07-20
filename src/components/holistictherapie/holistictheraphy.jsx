@@ -538,8 +538,8 @@ function TherapyCard({ therapy }) {
               {/* Price and Buttons */}
               <div className="flex flex-col sm:flex-row justify-between items-center gap-2 border-t border-gray-100 pt-3 mt-auto">
                 <div className="flex items-center gap-1.5 text-base font-bold text-amber-700">
-                  <IndianRupee className="w-3.5 h-3.5" />
-                  {therapy.price}
+                  {/* <IndianRupee className="w-3.5 h-3.5" />
+                  {therapy.price} */}
                 </div>
                 <div className="flex gap-2 w-full sm:w-auto">
                   <a
