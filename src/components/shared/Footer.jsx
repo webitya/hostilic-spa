@@ -118,7 +118,7 @@ export default function Footer() {
     href="https://nextbizdigital.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="ml-1 font-bold text-gray-800 hover:text-blue-700 hover:underline decoration-2 underline-offset-4 transition-all duration-300"
+    className="ml-1 font-bold text-blue-800 hover:text-blue-700 decoration-2 underline-offset-4 transition-all duration-300"
   >
     NextBiz Digital
   </a>
