@@ -506,7 +506,7 @@ export default function ContactPage() {
               <PhoneIcon style={iconStyle} />
               <div>
                 <p style={contactLabelStyle}>Phone</p>
-                <p style={contactValueStyle}>+91 95301 55999</p>
+                <p style={contactValueStyle}>+91 6306366978</p>
               </div>
             </div>
 
@@ -530,7 +530,7 @@ export default function ContactPage() {
               <WhatsAppIcon style={iconStyle} />
               <div>
                 <p style={contactLabelStyle}>WhatsApp</p>
-                <p style={contactValueStyle}>Same as phone number</p>
+                <p style={contactValueStyle}>+91 6306366978</p>
               </div>
             </div>
 
