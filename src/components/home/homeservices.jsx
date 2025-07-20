@@ -72,9 +72,10 @@ export default function HomeWellnessServices() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Mandir Palace */}
           <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="bg-white p-6 rounded-lg shadow-md transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="bg-white p-6 rounded-lg shadow-md"
           >
             <img
               src="/welcomheritage-mandir.jpg"
@@ -100,9 +101,10 @@ export default function HomeWellnessServices() {
 
           {/* Mohangarh Fort */}
           <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-            className="bg-white p-6 rounded-lg shadow-md transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="bg-white p-6 rounded-lg shadow-md"
           >
             <img
               src="/welcomeheritage-mohangarh.jpg"
