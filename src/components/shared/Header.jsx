@@ -25,8 +25,8 @@ export default function Header() {
   ]
 
   const serviceItems = [
-    { name: "SR Holistic Spa Therapies", href: "/holistic-therapies" },
-    { name: "SR Ayurvedic Panchkarma & Wellness Rituals", href: "/ayurvedic-panchkarma" },
+    { name: "Holistic Therapy", href: "/holistic-therapies" },
+    { name: "Ayurvedic Panchkarma", href: "/ayurvedic-panchkarma" },
   ]
 
   useEffect(() => {
