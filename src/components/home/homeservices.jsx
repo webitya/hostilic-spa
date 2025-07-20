@@ -110,7 +110,7 @@ export default function HomeWellnessServices() {
               className="w-full aspect-video object-cover rounded-md mb-4"
             />
             <h3 className="text-[#27545b] font-semibold text-lg mb-2">
-              WelcomHeritage Mohangarh Fort
+              Welcome to Heritage Mohangarh Fort
             </h3>
             <p className="text-sm leading-relaxed mb-4">
               Since 2019, guests at this yellow‑sandstone fort immerse themselves
