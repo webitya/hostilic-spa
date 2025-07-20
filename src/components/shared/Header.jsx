@@ -20,11 +20,12 @@ export default function Header() {
 
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+   
    
       { name: "Holistic Therapy", href: "/holistic-therapies" },
     { name: "Ayurvedic Panchkarma", href: "/ayurvedic-panchkarma" },
       { name: "Partner with us", href: "/partner-with-us" },
+       { name: "About us", href: "/about" },
      { name: "Contact Us", href: "/contact" },
   ]
 
