@@ -77,7 +77,7 @@ export default function HomeWellnessServices() {
           >
             <img
               src="/welcomheritage-mandir.jpg"
-              alt="WelcomHeritage Mandir Palace"
+              alt="Welcome to Heritage Mandir Palace"
               className="w-full aspect-video object-cover rounded-md mb-4"
             />
             <h3 className="text-[#27545b] font-semibold text-lg mb-2">
