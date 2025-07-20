@@ -21,9 +21,11 @@ export default function Header() {
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+   
       { name: "Holistic Therapy", href: "/holistic-therapies" },
     { name: "Ayurvedic Panchkarma", href: "/ayurvedic-panchkarma" },
+      { name: "Partner with us", href: "/partner-with-us" },
+     { name: "Contact Us", href: "/contact" },
   ]
 
   const serviceItems = [
@@ -167,7 +169,7 @@ export default function Header() {
             </li> */}
 
             {/* Partner With Us */}
-            <li>
+            {/* <li>
               <Link
                 href="/partner-with-us"
                 className={`relative px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 ${
@@ -186,7 +188,7 @@ export default function Header() {
                   />
                 )}
               </Link>
-            </li>
+            </li> */}
 
             {/* Phone Button */}
             <li className="ml-4">
@@ -283,7 +285,7 @@ export default function Header() {
                 ))}
 
                 {/* Our Services Dropdown in Mobile */}
-                <motion.div
+                {/* <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: menuItems.length * 0.1 }}
@@ -344,10 +346,10 @@ export default function Header() {
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </motion.div>
+                </motion.div> */}
 
                 {/* Partner With Us */}
-                <motion.div
+                {/* <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: (menuItems.length + 1) * 0.1 }}
@@ -366,7 +368,7 @@ export default function Header() {
                       <FiberManualRecordIcon fontSize="small" className="text-amber-600" />
                     )}
                   </Link>
-                </motion.div>
+                </motion.div> */}
               </div>
 
               {/* Call Button */}
