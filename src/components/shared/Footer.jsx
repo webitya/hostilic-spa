@@ -110,9 +110,19 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-gray-100">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} SR Holistic Wellness. All rights reserved. |  Built, boosted, and branded by NextBiz Digital
-            </p>
+          <p className="text-gray-500 text-sm text-center leading-relaxed">
+  © {new Date().getFullYear()} <span className="font-medium text-gray-700">SR Holistic Wellness</span>. All rights reserved. |  
+  <span className="ml-1">Built, boosted & branded by</span> 
+  <a 
+    href="https://nextbizdigital.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="text-blue-600 font-semibold hover:underline hover:text-blue-800 transition-colors duration-200"
+  >
+    NextBiz Digital
+  </a>
+</p>
+
 
             <div className="flex items-center gap-6 text-sm">
               <Link href="/privacy" className="text-gray-500 hover:text-amber-600 transition-colors duration-200">
