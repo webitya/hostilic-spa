@@ -83,7 +83,7 @@ export default function HomeWellnessServices() {
               className="w-full aspect-video object-cover rounded-md mb-4"
             />
             <h3 className="text-[#27545b] font-semibold text-lg mb-2">
-              WelcomHeritage Mandir Palace
+              Welcome to Heritage Mandir Palace
             </h3>
             <p className="text-sm leading-relaxed mb-4">
               Operating since 2019, this 200‑year‑old heritage palace blends royal
