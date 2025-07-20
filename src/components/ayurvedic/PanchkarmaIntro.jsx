@@ -195,7 +195,7 @@ export default function AyurvedicPanchkarmaPage() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-amber-700 text-white py-16 text-center">
+      {/* <section className="bg-amber-700 text-white py-16 text-center">
         <motion.div
           className="max-w-4xl mx-auto px-6"
           initial={{ opacity: 0, y: 20 }}
@@ -217,7 +217,7 @@ export default function AyurvedicPanchkarmaPage() {
             WhatsApp Us Today
           </a>
         </motion.div>
-      </section>
+      </section> */}
     </div>
   )
 }
