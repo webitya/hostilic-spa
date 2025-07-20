@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react"; // elegant icon (requires lucide-react)
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 export default function HomeWellnessServices() {
   return (
@@ -72,9 +72,9 @@ export default function HomeWellnessServices() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Mandir Palace */}
           <motion.div
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
-            className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all"
+            className="bg-white p-6 rounded-lg shadow-md transition-all"
           >
             <img
               src="/welcomheritage-mandir.jpg"
@@ -92,17 +92,17 @@ export default function HomeWellnessServices() {
               href="https://www.google.com/maps?q=WelcomHeritage+Mandir+Palace+Jaisalmer"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline decoration-2 underline-offset-4 transition-all"
+              className="inline-flex items-center gap-1 text-sm font-medium text-blue-700"
             >
-              <MapPin className="w-4 h-4" /> View on Map
+              <LocationOnIcon style={{ fontSize: 18 }} /> Jaisalmer, Rajasthan
             </a>
           </motion.div>
 
           {/* Mohangarh Fort */}
           <motion.div
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
-            className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all"
+            className="bg-white p-6 rounded-lg shadow-md transition-all"
           >
             <img
               src="/welcomeheritage-mohangarh.jpg"
@@ -120,9 +120,9 @@ export default function HomeWellnessServices() {
               href="https://www.google.com/maps?q=WelcomHeritage+Mohangarh+Fort+Jaisalmer"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline decoration-2 underline-offset-4 transition-all"
+              className="inline-flex items-center gap-1 text-sm font-medium text-blue-700"
             >
-              <MapPin className="w-4 h-4" /> View on Map
+              <LocationOnIcon style={{ fontSize: 18 }} /> Jaisalmer, Rajasthan
             </a>
           </motion.div>
         </div>
