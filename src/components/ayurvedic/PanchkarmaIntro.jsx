@@ -84,7 +84,7 @@ const itemVariants = {
 }
 
 export default function AyurvedicPanchkarmaPage() {
-  const phoneNumber = "919693245941" // Your WhatsApp number
+  const phoneNumber = "916306366978" // Your WhatsApp number
 
   const heroWhatsappMessage = encodeURIComponent(
     "Hello, I'd like to book a session for Ayurvedic Panchkarma. Could you please assist me?",

@@ -444,7 +444,7 @@ function TherapyCard({ therapy }) {
   const whatsappMessage = encodeURIComponent(
     `Hello, I'm interested in the ${therapy.name} therapy. Could you please provide more details or help me book a session?`,
   )
-  const whatsappLink = `https://wa.me/919693245941?text=${whatsappMessage}`
+  const whatsappLink = `https://wa.me/916306366978?text=${whatsappMessage}`
   return (
     <div className="relative w-full h-[370px] perspective-1000 group" onClick={() => setIsFlipped(!isFlipped)}>
       <motion.div
