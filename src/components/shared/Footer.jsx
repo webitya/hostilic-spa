@@ -111,7 +111,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-100">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} SR Holistic Wellness. All rights reserved.
+              © {new Date().getFullYear()} SR Holistic Wellness. All rights reserved. |  Built, boosted, and branded by NextBiz Digital
             </p>
 
             <div className="flex items-center gap-6 text-sm">
