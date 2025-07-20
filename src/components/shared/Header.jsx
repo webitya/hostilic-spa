@@ -22,11 +22,12 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
+      { name: "Holistic Therapy", href: "/holistic-therapies" },
+    { name: "Ayurvedic Panchkarma", href: "/ayurvedic-panchkarma" },
   ]
 
   const serviceItems = [
-    { name: "Holistic Therapy", href: "/holistic-therapies" },
-    { name: "Ayurvedic Panchkarma", href: "/ayurvedic-panchkarma" },
+  
   ]
 
   useEffect(() => {
@@ -102,7 +103,7 @@ export default function Header() {
             ))}
 
             {/* Our Services Dropdown */}
-            <li className="relative" ref={dropdownRef}>
+            {/* <li className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setDropdownOpen((prev) => !prev)}
                 className={`relative px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 flex items-center gap-1.5 ${
@@ -163,7 +164,7 @@ export default function Header() {
                   </motion.ul>
                 )}
               </AnimatePresence>
-            </li>
+            </li> */}
 
             {/* Partner With Us */}
             <li>
