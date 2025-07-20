@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { MapPin } from "lucide-react"; // elegant icon (requires lucide-react)
 
 export default function HomeWellnessServices() {
   return (
@@ -32,7 +33,7 @@ export default function HomeWellnessServices() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        {/* 🔵 Circular Logo */}
+        {/* Logo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -40,7 +41,7 @@ export default function HomeWellnessServices() {
           className="mb-6"
         >
           <img
-            src="/logo.jpg" // ⬅️ Replace with your actual logo path
+            src="/logo.jpg"
             alt="SR Holistic Wellness Logo"
             className="w-24 h-24 mx-auto rounded-full border-4 border-white shadow-lg object-cover"
           />
@@ -64,10 +65,10 @@ export default function HomeWellnessServices() {
           className="text-center max-w-2xl mx-auto mb-10"
         >
           SR Holistic Wellness proudly delivers luxury spa experiences within two iconic WelcomHeritage
-          destinations in Jaisalmer, Rajasthan.
+          destinations in <span className="font-semibold">Jaisalmer, Rajasthan</span>.
         </motion.p>
 
-        {/* Card Grid */}
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Mandir Palace */}
           <motion.div
@@ -77,16 +78,24 @@ export default function HomeWellnessServices() {
           >
             <img
               src="/welcomheritage-mandir.jpg"
-              alt="Welcome to Heritage Mandir Palace"
+              alt="WelcomHeritage Mandir Palace"
               className="w-full aspect-video object-cover rounded-md mb-4"
             />
             <h3 className="text-[#27545b] font-semibold text-lg mb-2">
               WelcomHeritage Mandir Palace
             </h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed mb-4">
               Operating since 2019, this 200‑year‑old heritage palace blends royal
               splendor with SR Holistic Wellness spa therapies for an unforgettable stay.
             </p>
+            <a
+              href="https://www.google.com/maps?q=WelcomHeritage+Mandir+Palace+Jaisalmer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline decoration-2 underline-offset-4 transition-all"
+            >
+              <MapPin className="w-4 h-4" /> View on Map
+            </a>
           </motion.div>
 
           {/* Mohangarh Fort */}
@@ -103,10 +112,18 @@ export default function HomeWellnessServices() {
             <h3 className="text-[#27545b] font-semibold text-lg mb-2">
               WelcomHeritage Mohangarh Fort
             </h3>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed mb-4">
               Since 2019, guests at this yellow‑sandstone fort immerse themselves
               in regal ambience complemented by our signature holistic spa rituals.
             </p>
+            <a
+              href="https://www.google.com/maps?q=WelcomHeritage+Mohangarh+Fort+Jaisalmer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline decoration-2 underline-offset-4 transition-all"
+            >
+              <MapPin className="w-4 h-4" /> View on Map
+            </a>
           </motion.div>
         </div>
       </div>
