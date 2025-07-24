@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.jpg" alt="SR Holistic Wellness" className="h-12 w-12 object-contain rounded-lg" />
+              <img src="/logo1.png" alt="SR Holistic Wellness" className="h-12 w-12 object-contain rounded-lg" />
               <div>
                 <h3 className="text-xl font-semibold text-gray-900">SR Holistic Wellness</h3>
                 <p className="text-sm text-amber-600 font-medium">Mind • Body • Soul</p>

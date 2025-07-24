@@ -2,7 +2,7 @@
 
 export default function AyurvedaWellness() {
   return (
-    <section className="px-4 py-10 bg-gradient-to-br from-yellow-50 to-white text-gray-800">
+    <section className="px-4 pt-24 pb-6 bg-gradient-to-br from-yellow-50 to-white text-gray-800">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
         {/* Left: Introduction */}
         <div className="space-y-6">

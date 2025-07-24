@@ -1,55 +1,32 @@
-"use client";
-
-import { motion } from "framer-motion";
-import SpaIcon from "@mui/icons-material/Spa";
+"use client"
+import { motion } from "framer-motion"
+import { Leaf } from "lucide-react" // Changed to Lucide React icon
 
 export default function AboutValues() {
   return (
     <section
-      className="about-values-section relative overflow-hidden"
+      className="relative overflow-hidden py-10 px-6 md:py-16 lg:py-16 text-center text-[#3A2F24] font-[Segoe UI,Roboto,Helvetica Neue,sans-serif]"
       style={{
-        background: "linear-gradient(120deg, #FF69B4, #FFD700)",
-        backgroundSize: "400% 400%",
-        padding: "3rem 1.5rem",
-        fontFamily: "'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif",
-        color: "#604235",
-        textAlign: "center",
-        position: "relative",
+        backgroundColor: "#F8F5F0", // Solid light beige background from image
       }}
     >
+      
+
       {/* Title */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        style={{ position: "relative", zIndex: 2 }}
+        className="relative z-20"
       >
-        <h2
-          style={{
-            fontSize: "2rem",
-            marginBottom: "2rem",
-            background: "linear-gradient(to right, #FFD700, #df865b)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontWeight: 700,
-          }}
-        >
+        <h2 className="text-3xl md:text-4xl lg:text-5xl mb-8 font-bold text-[#27545b]">
+          {" "}
+          {/* Solid dark teal color for title */}
           Our Core Values
         </h2>
       </motion.div>
-
       {/* Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "2rem",
-          maxWidth: "1000px",
-          margin: "0 auto",
-          position: "relative",
-          zIndex: 2,
-        }}
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto relative z-20">
         {[
           {
             title: "Compassion",
@@ -72,63 +49,28 @@ export default function AboutValues() {
             key={idx}
             whileHover={{
               scale: 1.03,
-              boxShadow: "0 8px 16px rgba(223, 134, 91, 0.3)",
+              boxShadow: "0 8px 16px rgba(0,0,0,0.08)", // Subtle shadow on hover
             }}
             transition={{ duration: 0.4 }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            style={{
-              backgroundColor: "#fff8e1",
-              padding: "1.5rem",
-              borderRadius: "10px",
-              border: "1px solid #df865b40",
-              textAlign: "center",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
-            }}
+            className="bg-white p-6 rounded-lg border border-[#E0D9D0] text-center shadow-sm hover:shadow-lg"
           >
-            <SpaIcon style={{ fontSize: "2rem", color: "#df865b" }} />
-            <h3
-              style={{
-                marginTop: "0.75rem",
-                marginBottom: "0.5rem",
-                color: "#27545b",
-                fontWeight: "600",
-              }}
-            >
+            <Leaf className="h-8 w-8 text-[#27545b]" /> {/* Leaf icon from Lucide React, dark teal color */}
+            <h3 className="mt-3 mb-2 text-xl font-semibold text-[#27545b]">
+              {" "}
+              {/* Dark teal for title */}
               {val.title}
             </h3>
-            <p style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+            <p className="text-base leading-relaxed text-[#5C5C5C]">
+              {" "}
+              {/* Soft dark gray/brown for description */}
               {val.desc}
             </p>
           </motion.div>
         ))}
       </div>
-
-      {/* Background animation */}
-      <style jsx>{`
-        @keyframes animatedGradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          100% {
-            background-position: 100% 50%;
-          }
-        }
-
-        .about-values-section {
-          animation: animatedGradient 20s ease infinite alternate;
-        }
-
-        @media (max-width: 768px) {
-          h2 {
-            font-size: 1.6rem !important;
-          }
-          p {
-            font-size: 0.95rem !important;
-          }
-        }
-      `}</style>
     </section>
-  );
+  )
 }

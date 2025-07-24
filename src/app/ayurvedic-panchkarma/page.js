@@ -10,10 +10,11 @@ import Vastitherapie from "@/components/ayurvedic/VastiTherapies";
 export default function AyurvedicPanchkarmaPage() {
   return (
     <main >
+      <Vastitherapie />
       <PanchkarmaIntro />
       {/* <Ayurvedicoiltheraphy /> */}
 
-      <Vastitherapie />
+      
     </main>
   );
 }
