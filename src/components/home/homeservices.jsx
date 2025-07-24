@@ -41,7 +41,7 @@ export default function HomeWellnessServices() {
           className="mb-6"
         >
           <img
-            src="/logo.jpg"
+            src="/logo1.png"
             alt="SR Holistic Wellness Logo"
             className="w-24 h-24 mx-auto rounded-full border-4 border-white shadow-lg object-cover"
           />
