@@ -85,7 +85,7 @@ export default function AboutUsPage() {
                 highest standards of purity, sustainability, and efficacy. Each ingredient we use tells a story—of
                 nature, healing, and uncompromising quality. SR Holistic Wellness is more than a spa—it’s a destination
                 for those seeking deeper connection, authentic transformation, and radiant natural beauty. Whether
-                you're here for healing, relaxation, or renewal, our commitment remains the same: luxury with purpose,
+                you are here for healing, relaxation, or renewal, our commitment remains the same: luxury with purpose,
                 care with integrity, and wellness that is truly holistic.
               </p>
             </div>
