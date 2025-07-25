@@ -23,24 +23,25 @@ const therapiesData = [
     icon: Lotus,
     description: "Experience deep relaxation and rejuvenation through our signature holistic treatments.",
     items: [
-      {
-        name: "Signature Therapy",
-        duration: "75 minutes",
-        price: "3500 INR",
-        description:
-          "Relax your mind, body, and senses with our signature holistic therapy. This personalized treatment blends soothing strokes with medium to deep pressure, expertly designed to release muscle knots, improve circulation, and melt away deep-seated tension. Tailored to your specific needs, this therapy offers a deeply restorative experience that leaves you feeling balanced, refreshed, and completely renewed.",
-        tags: ["CUSTOMIZE TO FIT YOUR SPECIFIC NEEDS"],
-        image: "/demo.jpeg?height=200&width=300",
-      },
-      {
-        name: "Classic Swedish Therapy",
-        duration: "60 minutes",
-        price: "2500 INR",
-        description:
-          "A classic and timeless full-body massage designed to relax, rejuvenate, and revive. The Original Swedish Therapy uses long, flowing strokes, circular palm pressure, firm kneading, and rhythmic tapping to ease muscle tension, stimulate circulation, and melt away stress. Performed with light to medium pressure, this therapy offers the perfect balance of relaxation and therapeutic benefits.",
-        tags: ["REVIVING", "RELAXING"],
-        image: "/demo.jpeg?height=200&width=300",
-      },
+  {
+    name: "Signature Therapy",
+    duration: "75 minutes",
+    price: "3500 INR",
+    description:
+      "Relax your mind, body, and senses with our signature holistic therapy. This personalized treatment blends soothing strokes with medium to deep pressure, expertly designed to release muscle knots, improve circulation, and melt away deep-seated tension. Tailored to your specific needs, this therapy offers a deeply restorative experience that leaves you feeling balanced, refreshed, and completely renewed.",
+    tags: ["CUSTOMIZE TO FIT YOUR SPECIFIC NEEDS"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "Classic Swedish Therapy",
+    duration: "60 minutes",
+    price: "2500 INR",
+    description:
+      "A classic and timeless full-body massage designed to relax, rejuvenate, and revive. The Original Swedish Therapy uses long, flowing strokes, circular palm pressure, firm kneading, and rhythmic tapping to ease muscle tension, stimulate circulation, and melt away stress. Performed with light to medium pressure, this therapy offers the perfect balance of relaxation and therapeutic benefits.",
+    tags: ["REVIVING", "RELAXING"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+
       {
         name: "Aroma Healing Therapy",
         duration: "60 minutes",
@@ -95,6 +96,24 @@ const therapiesData = [
         tags: ["INNER-STRENGTHENING", "RENEWING", "DEEP TISSUE"],
         image: "/demo.jpeg?height=200&width=300",
       },
+        {
+    name: "Hot Stone Massage",
+    duration: "75 minutes",
+    price: "3000 INR",
+    description:
+      "A deeply soothing massage using heated basalt stones to warm and relax tight muscles, allowing for deeper pressure without discomfort. The warmth of the stones helps improve circulation, relieve chronic pain, and melt away stress. Ideal for those seeking a calming, grounding experience that promotes balance and tranquility.",
+    tags: ["DE-STRESSING", "WARMING", "GROUNDING"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "Deep Tissue Massage",
+    duration: "60 minutes",
+    price: "2800 INR",
+    description:
+      "An intensive therapy focused on realigning deeper layers of muscle and connective tissue. Using slow, firm strokes and deep finger pressure, this treatment targets chronic tension, muscle adhesions, and deep knots, making it ideal for athletes or individuals with high-stress lifestyles. It promotes muscle recovery and long-lasting relief.",
+    tags: ["THERAPEUTIC", "INTENSIVE", "RECOVERY-FOCUSED"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
     ],
   },
   {

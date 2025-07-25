@@ -80,26 +80,26 @@ const ayurvedicContent = {
     tags: ["OIL RETENTION", "SKELETAL HEALTH", "NERVOUS SYSTEM"],
     image: "/demo.jpeg?height=200&width=300",
   },
-  {
-    name: "HOT STONE THERAPY",
-    duration: "75 Minutes",
-    description:
-      "Heated volcanic stones are strategically placed on the body to deeply relax muscles, improve blood flow, and melt away stress. Ideal for those seeking warmth, deep relaxation, and balance of energy.",
-    price: "3600 INR",
-    icon: Flame, // You may replace with any icon you prefer for heat/energy
-    tags: ["HEAT THERAPY", "MUSCLE RELAXATION", "STRESS RELIEF"],
-    image: "/demo.jpeg?height=200&width=300",
-  },
-  {
-    name: "DEEP TISSUE THERAPY",
-    duration: "60 Minutes",
-    description:
-      "Focused massage technique targeting deeper muscle layers and connective tissues to relieve chronic pain, stiffness, and tension. Especially beneficial for athletes and people with physically demanding routines.",
-    price: "3100 INR",
-    icon: Dumbbell, // You can use a muscle icon or similar
-    tags: ["CHRONIC PAIN", "DEEP PRESSURE", "TENSION RELIEF"],
-    image: "/demo.jpeg?height=200&width=300",
-  },
+  // {
+  //   name: "HOT STONE THERAPY",
+  //   duration: "75 Minutes",
+  //   description:
+  //     "Heated volcanic stones are strategically placed on the body to deeply relax muscles, improve blood flow, and melt away stress. Ideal for those seeking warmth, deep relaxation, and balance of energy.",
+  //   price: "3600 INR",
+  //   icon: Flame, // You may replace with any icon you prefer for heat/energy
+  //   tags: ["HEAT THERAPY", "MUSCLE RELAXATION", "STRESS RELIEF"],
+  //   image: "/demo.jpeg?height=200&width=300",
+  // },
+  // {
+  //   name: "DEEP TISSUE THERAPY",
+  //   duration: "60 Minutes",
+  //   description:
+  //     "Focused massage technique targeting deeper muscle layers and connective tissues to relieve chronic pain, stiffness, and tension. Especially beneficial for athletes and people with physically demanding routines.",
+  //   price: "3100 INR",
+  //   icon: Dumbbell, // You can use a muscle icon or similar
+  //   tags: ["CHRONIC PAIN", "DEEP PRESSURE", "TENSION RELIEF"],
+  //   image: "/demo.jpeg?height=200&width=300",
+  // },
 ]
 
 }

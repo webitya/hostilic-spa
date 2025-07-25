@@ -147,7 +147,7 @@ export default function Header() {
               {/* Drawer Header */}
               <div className="flex items-center justify-between p-5 border-b border-gray-100">
                 <div className="flex items-center gap-2">
-                  <img src="/logo.jpg" alt="SR Holistic Wellness" className="h-8 w-auto object-contain" />
+                  <img src="/logo1.png" alt="SR Holistic Wellness" className="h-8 w-auto object-contain" />
                   <span className="text-lg font-bold text-gray-900">Menu</span>
                 </div>
                 <button
