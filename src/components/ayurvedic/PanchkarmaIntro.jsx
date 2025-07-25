@@ -11,7 +11,10 @@ import {
   Sparkles,
   Phone,
   CheckCircle,
-} from "lucide-react"
+  Flame,
+  Dumbbell,
+} from "lucide-react";
+
 
 // Data for Ayurvedic Panchkarma content
 const ayurvedicContent = {
@@ -21,73 +24,84 @@ const ayurvedicContent = {
       "Experience the true age-old Ayurvedic therapies in peaceful traditional cottages. These therapies deeply relax and heal the soul and promote self-healing.",
   },
   treatments: [
-    {
-      name: "ABHYANGAM AYURVEDIC",
-      duration: "60 Minutes",
-      description:
-        "Full body Ayurvedic massage using warm herbal oils. Its long strokes breakdown toxin blockages, relax the body, stimulate the organs, and clear the body’s main circulatory channels",
-      price: "2800 INR",
-      icon: Hand,
-      tags: ["FULL BODY", "HERBAL OIL", "DETOX"],
-      image: "/placeholder.svg?height=200&width=300",
-    },
-    {
-      name: "SHIRODHARA",
-      duration: "60 Minutes",
-      description:
-        "It is a luxurious treatment which awakens the mind and lulls the entire body into a state of relaxation. A continuous stream of medicated warm oil is poured onto the forehead. It revitalizes the central nervous system and the mind reaches to a supreme blissful state.",
-      price: "3200 INR",
-      icon: Sparkles,
-      tags: ["MIND RELAXATION", "NERVOUS SYSTEM", "BLISSFUL STATE"],
-      image: "/placeholder.svg?height=200&width=300",
-    },
-    {
-      name: "KIZHI - Hot Bundles Massage",
-      duration: "60 Minutes",
-      description:
-        "Herbal powders are poured into cotton bags, immersed in warm herbal oil and gently padded to the whole body. Helps relax body and muscle tensions, induce sweat and detox, and absorb nourishing powder nutrients",
-      price: "3000 INR",
-      icon: Leaf,
-      tags: ["HERBAL BUNDLES", "MUSCLE RELAXATION", "DETOX"],
-      image: "/placeholder.svg?height=200&width=300",
-    },
-    {
-      name: "AYURVEDIC POTLI MASSAGE",
-      duration: "75 Minutes",
-      description:
-        "Instant and popular massage focusing on built up stress and muscle tension in all areas around neck and shoulder helps to relieves stress, improve circulation, improve concentration, encourage a quick and good sleep, helps to feel relaxed and calm your mind",
-      price: "3500 INR",
-      icon: Hand,
-      tags: ["STRESS RELIEF", "CIRCULATION", "NECK & SHOULDER"],
-      image: "/placeholder.svg?height=200&width=300",
-    },
-    {
-      name: "UDWARTHANANAM- Herbal Detox Therapy",
-      duration: "60 Minutes",
-      description:
-        "Therapeutic deep tissue massage using herbal powders. It involves upward stroking where the powder is forcibly rubbed on the body to breakdown toxin and fat blocks under the skin while nourishing it with natural detoxifying ingredients",
-      price: "2900 INR",
-      icon: Lotus, // Using Lotus for a general wellness icon
-      tags: ["DEEP TISSUE", "HERBAL POWDER", "DETOX"],
-      image: "/placeholder.svg?height=200&width=300",
-    },
-    {
-      name: "VASTI",
-      duration: "30 mins",
-      description:
-        "Vasti is a typical Ayurvedic treatment in which there is retention of lukewarm, medicated oil on the specific part of the body. Good for Skeletal, muscular, nervous problems. In fact good for all diseases.",
-      subPoints: [
-        "Shirovasti :- Retention of the oil on Head region",
-        "Greeva vasti :- Retention of the oil on neck region",
-        "Kadi vasti :- Retention of the oil on lumbar region",
-        "Janu vasti :- Retention of the oil on the Knee region.",
-      ],
-      price: "2000 INR",
-      icon: Footprints,
-      tags: ["OIL RETENTION", "SKELETAL HEALTH", "NERVOUS SYSTEM"],
-      image: "/placeholder.svg?height=200&width=300",
-    },
-  ],
+  {
+    name: "SHIRODHARA",
+    duration: "60 Minutes",
+    description:
+      "It is a luxurious treatment which awakens the mind and lulls the entire body into a state of relaxation. A continuous stream of medicated warm oil is poured onto the forehead. It revitalizes the central nervous system and the mind reaches to a supreme blissful state.",
+    price: "3200 INR",
+    icon: Sparkles,
+    tags: ["MIND RELAXATION", "NERVOUS SYSTEM", "BLISSFUL STATE"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "KIZHI - Hot Bundles Massage",
+    duration: "60 Minutes",
+    description:
+      "Herbal powders are poured into cotton bags, immersed in warm herbal oil and gently padded to the whole body. Helps relax body and muscle tensions, induce sweat and detox, and absorb nourishing powder nutrients",
+    price: "3000 INR",
+    icon: Leaf,
+    tags: ["HERBAL BUNDLES", "MUSCLE RELAXATION", "DETOX"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "AYURVEDIC POTLI MASSAGE",
+    duration: "75 Minutes",
+    description:
+      "Instant and popular massage focusing on built up stress and muscle tension in all areas around neck and shoulder helps to relieves stress, improve circulation, improve concentration, encourage a quick and good sleep, helps to feel relaxed and calm your mind",
+    price: "3500 INR",
+    icon: Hand,
+    tags: ["STRESS RELIEF", "CIRCULATION", "NECK & SHOULDER"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "UDWARTHANANAM - Herbal Detox Therapy",
+    duration: "60 Minutes",
+    description:
+      "Therapeutic deep tissue massage using herbal powders. It involves upward stroking where the powder is forcibly rubbed on the body to breakdown toxin and fat blocks under the skin while nourishing it with natural detoxifying ingredients",
+    price: "2900 INR",
+    icon: Lotus,
+    tags: ["DEEP TISSUE", "HERBAL POWDER", "DETOX"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "VASTI",
+    duration: "30 mins",
+    description:
+      "Vasti is a typical Ayurvedic treatment in which there is retention of lukewarm, medicated oil on the specific part of the body. Good for Skeletal, muscular, nervous problems. In fact good for all diseases.",
+    subPoints: [
+      "Shirovasti :- Retention of the oil on Head region",
+      "Greeva vasti :- Retention of the oil on neck region",
+      "Kadi vasti :- Retention of the oil on lumbar region",
+      "Janu vasti :- Retention of the oil on the Knee region.",
+    ],
+    price: "2000 INR",
+    icon: Footprints,
+    tags: ["OIL RETENTION", "SKELETAL HEALTH", "NERVOUS SYSTEM"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "HOT STONE THERAPY",
+    duration: "75 Minutes",
+    description:
+      "Heated volcanic stones are strategically placed on the body to deeply relax muscles, improve blood flow, and melt away stress. Ideal for those seeking warmth, deep relaxation, and balance of energy.",
+    price: "3600 INR",
+    icon: Flame, // You may replace with any icon you prefer for heat/energy
+    tags: ["HEAT THERAPY", "MUSCLE RELAXATION", "STRESS RELIEF"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
+    name: "DEEP TISSUE THERAPY",
+    duration: "60 Minutes",
+    description:
+      "Focused massage technique targeting deeper muscle layers and connective tissues to relieve chronic pain, stiffness, and tension. Especially beneficial for athletes and people with physically demanding routines.",
+    price: "3100 INR",
+    icon: Dumbbell, // You can use a muscle icon or similar
+    tags: ["CHRONIC PAIN", "DEEP PRESSURE", "TENSION RELIEF"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+]
+
 }
 
 const containerVariants = {
@@ -187,7 +201,7 @@ function AyurvedicTreatmentCard({ treatment, phoneNumber }) {
       {treatment.image && (
         <div className="relative w-full h-36 overflow-hidden">
           <Image
-            src={treatment.image || "/placeholder.svg"}
+            src={treatment.image || "/demo.jpeg"}
             alt={treatment.name}
             layout="fill"
             objectFit="cover"

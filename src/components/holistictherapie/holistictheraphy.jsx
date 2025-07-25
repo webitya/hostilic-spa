@@ -30,7 +30,7 @@ const therapiesData = [
         description:
           "Relax your mind, body, and senses with our signature holistic therapy. This personalized treatment blends soothing strokes with medium to deep pressure, expertly designed to release muscle knots, improve circulation, and melt away deep-seated tension. Tailored to your specific needs, this therapy offers a deeply restorative experience that leaves you feeling balanced, refreshed, and completely renewed.",
         tags: ["CUSTOMIZE TO FIT YOUR SPECIFIC NEEDS"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Classic Swedish Therapy",
@@ -39,7 +39,7 @@ const therapiesData = [
         description:
           "A classic and timeless full-body massage designed to relax, rejuvenate, and revive. The Original Swedish Therapy uses long, flowing strokes, circular palm pressure, firm kneading, and rhythmic tapping to ease muscle tension, stimulate circulation, and melt away stress. Performed with light to medium pressure, this therapy offers the perfect balance of relaxation and therapeutic benefits.",
         tags: ["REVIVING", "RELAXING"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Aroma Healing Therapy",
@@ -48,7 +48,7 @@ const therapiesData = [
         description:
           "A Great stress buster. Aroma therapy is a sure way to relax and unwind at the end of a long tiring day. This Therapeutic massage Combines the use of essential oils and quickly penetrates into the skin, getting absorbed In the blood stream . It Helps to soften the sore muscles , suppressed tension and sends you into a relaxed state, both emotionally and physically.",
         tags: ["DE-STRESSING", "RELAXING"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Chakra Balancing Therapy",
@@ -57,7 +57,7 @@ const therapiesData = [
         description:
           "A deeply healing and restorative therapy that begins with a relaxing full-body massage, followed by the placement of crystals on the body's seven chakra points. Crystals and gemstones carry powerful vibrational energy that helps restore balance to the body’s energy field. This gentle hands-on technique promotes profound relaxation and supports healing on physical, emotional, mental, and spiritual levels.",
         tags: ["HEALING", "RESTORATIVE", "ENERGY BALANCE"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "SHIATSU MASSAGE",
@@ -66,7 +66,7 @@ const therapiesData = [
         description:
           "An ancient Japanese healing technique that uses finger pressure on specific meridian points to balance energy flow. This fully clothed, oil-free massage relieves stress, improves circulation, and restores the body’s natural harmony. Ideal for reducing fatigue, easing muscle tension, and promoting deep relaxation and well-being.",
         tags: ["JAPANESE TECHNIQUE", "OIL-FREE", "STRESS RELIEF"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Thai Yoga Stretching (Dry massage)",
@@ -75,7 +75,7 @@ const therapiesData = [
         description:
           "A traditional healing art rooted in ancient Thai and Indian Ayurvedic wisdom, this dry massage blends acupressure, energy line work, and assisted yoga postures. Performed fully clothed without oils, it gently stretches the body, improves flexibility, enhances circulation, and promotes deep relaxation. Ideal for releasing muscular tension and restoring natural body balance through mindful movement and therapeutic touch.",
         tags: ["BOOST INSTANT", "NEW ENERGY", "DRY MASSAGE"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Abhyangam Ayurvedic",
@@ -84,7 +84,7 @@ const therapiesData = [
         description:
           "Combined with ancient ceremonies and rituals, this holistic ayurvedic rejuvenation therapy consists of vigorous vitality, balancing of tri-doshas and has an overall rejuvenating effect on the body, mind and soul. Which make to deep Healing and pain reliving benefit.",
         tags: ["REJUVENATION", "RESTORING", "AYURVEDIC"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Traditional Balinese Massage",
@@ -93,7 +93,7 @@ const therapiesData = [
         description:
           "Balinese massage is a form of traditional Indonesian massage which originated on the island of Bali. This deep massage is designed to work almost every Muscles in the body. It involves variety of techniques including stretching acupressure movements, palm pressure, Sliding, kneading can be felt deep into the muscles. Balinese massage aims to relax your state of mind promote blood flow provides oxygen and energy throughout the body.",
         tags: ["INNER-STRENGTHENING", "RENEWING", "DEEP TISSUE"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
     ],
   },
@@ -109,7 +109,7 @@ const therapiesData = [
         description:
           "Full body treatment offering skin exfoliation with Andaman Sea shell skin polish and a short body massage with volcanic mineral Oil followed by detox bath rituals.",
         tags: ["EXFOLIATION", "DETOXIFYING", "SEA SHELL"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Moroccan Scrub + Coffee Bean Massage",
@@ -118,7 +118,7 @@ const therapiesData = [
         description:
           "This therapy comprises of two course body scrubbing and polishing ritual with a blend of spice and herbs rich Moroccan scrub. It has A curative cooling effect which helps to detoxify the skin pores. It is followed by the massage with invigorating coffee bean oil that helps to soothe the muscles from deep within.",
         tags: ["NOURISHING", "CONDITIONING", "COFFEE BEAN"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "HIMALAYAN PINK SALT SCRUB",
@@ -127,7 +127,7 @@ const therapiesData = [
         description:
           "Indulge in a luxurious body polish featuring pure Himalayan pink salt blended with aromatic oils and cream. This detoxifying treatment gently exfoliates dead skin cells, stimulates circulation, and revitalizes dull, tired skin. The result is a silky-smooth, deeply nourished body with a radiant, healthy glow. Perfect for renewing your skin and refreshing your senses.",
         tags: ["DETOXIFYING", "EXFOLIATING", "HIMALAYAN SALT"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "WALNUT BODY SCRUB",
@@ -136,7 +136,7 @@ const therapiesData = [
         description:
           "A gentle yet effective exfoliation using finely ground walnut shells blended with nourishing oils and natural cream. It removes dead skin cells, unclogs pores, and leaves the skin feeling soft, radiant, and refreshed. Ideal for dull or rough skin, this scrub enhances natural glow and promotes healthy circulation.",
         tags: ["GENTLE EXFOLIATION", "NOURISHING", "WALNUT"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "DEAD SEA CLAY BODY WRAP",
@@ -145,7 +145,7 @@ const therapiesData = [
         description:
           "A rejuvenating full-body wrap using mineral-rich Dead Sea clay known for its detoxifying and skin-toning properties. This treatment helps draw out impurities, reduce water retention, and improve skin texture and firmness. Deeply relaxing and therapeutic, it leaves your body feeling purified, nourished, and refreshed.",
         tags: ["DETOXIFYING", "SKIN TONING", "DEAD SEA CLAY"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "INDIAN MUD THERAPY",
@@ -154,7 +154,7 @@ const therapiesData = [
         description:
           "Traditional healing treatment using mineral-rich Indian clay to detoxify, nourish, and tone the skin. The warm mud promotes deep relaxation, relieves muscle tension, and improves blood circulation. Perfect for restoring balance, reducing inflammation, and revitalizing both body and mind.",
         tags: ["TRADITIONAL", "DETOXIFYING", "INDIAN MUD"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
     ],
   },
@@ -170,7 +170,7 @@ const therapiesData = [
         description:
           "A virtual countdown to `butter` this tension taming massage begins with foot yoga followed with an aromatic warm, roasted coffee bean oil from prestigious areas of Antigua in Guatemala. It aims at loosening most troubled muscles while improving circulation and leaving you in a state of tranquility.",
         tags: ["DETOXIFYING", "RELAXING", "COFFEE OIL"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Muscle Fuel Foot Massage (Russian)",
@@ -179,7 +179,7 @@ const therapiesData = [
         description:
           "If you have been dragging your feet around, it time to jump on the healthy muscles and skin bandwagon. This therapy help to alleviate the muscle tension increase blood circulation and aids metabolism. The end result is happier pampered feet and Rejuvenated mind.",
         tags: ["MUSCLE RECOVERY", "RE-ENERGIZING", "RUSSIAN MASSAGE"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Signature Foot Reflexology",
@@ -188,7 +188,7 @@ const therapiesData = [
         description:
           "Experience our signature foot therapy designed to relax, restore, and revive. This indulgent treatment begins with a refreshing foot scrub to gently exfoliate and smooth the skin. It is followed by a deeply therapeutic reflexology massage that targets specific pressure points to relieve stress, improve circulation, and restore the body's natural balance. Perfect for soothing tired feet while promoting total-body wellness.",
         tags: ["SIGNATURE", "REFLEXOLOGY", "STRESS RELIEF"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Uplifting Leg Massage (Full Leg Massage)",
@@ -197,7 +197,7 @@ const therapiesData = [
         description:
           "An invigorating and deeply soothing treatment that targets the full length of the legs to relieve fatigue, improve circulation, and restore muscle tone. This unique massage relaxes tired muscles, reduces tension, and leaves your legs feeling light, refreshed, and energized. Perfect for those on their feet all day or seeking total leg rejuvenation with a luxurious touch.",
         tags: ["INVIGORATING", "LEG MASSAGE", "CIRCULATION"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
     ],
   },
@@ -213,7 +213,7 @@ const therapiesData = [
         description:
           "Instant and popular massage focusing on built up stress and muscle tension in all areas around neck and shoulder helps to relieves stress, improve circulation, improve concentration, encourage a quick and good sleep, helps to feel relaxed and calm your mind",
         tags: ["RELAXING", "STRESS RELIEF", "HEAD & SHOULDER"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Soothing Back Massage",
@@ -222,7 +222,7 @@ const therapiesData = [
         description:
           "A quick yet deeply effective therapy designed to ease tension in your most stressed areas—especially the neck, shoulders, and upper back. Our skilled therapists use targeted pressure-point techniques to release knots, improve circulation, and melt away fatigue. Perfect for those seeking instant relief and renewed energy in just half an hour",
         tags: ["BACK RELIEF", "QUICK RELIEF", "NECK & SHOULDER"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Signature Stretching Back Massage",
@@ -231,7 +231,7 @@ const therapiesData = [
         description:
           "An ancient healing ritual that combines deep, static pressure with rhythmic stretching techniques to unlock tension and restore energy flow. This back-focused massage enhances flexibility, releases physical and emotional stress, and clears stagnant energy, leaving you feeling grounded, rebalanced, and deeply relaxed. A soulful journey toward inner peace and body renewal.",
         tags: ["INNER-STRENGTH", "REVITALISING", "STRETCHING"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Uplifting Leg Massage (Full Leg Massage)",
@@ -240,7 +240,7 @@ const therapiesData = [
         description:
           "An invigorating and deeply soothing treatment that targets the full length of the legs to relieve fatigue, improve circulation, and restore muscle tone. This unique massage relaxes tired muscles, reduces tension, and leaves your legs feeling light, refreshed, and energized. Perfect for those on their feet all day or seeking total leg rejuvenation with a luxurious touch.",
         tags: ["INVIGORATING", "LEG MASSAGE", "CIRCULATION"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
     ],
   },
@@ -256,7 +256,7 @@ const therapiesData = [
         description:
           "An intensive purifying and oxygenating facial that delivers instant radiance. This treatment effectively removes all traces of impurities, unclogs and refines pores, and helps balance the skin's natural moisture levels. Perfect for detoxifying and refreshing the skin, leaving it",
         tags: ["PURIFYING", "REFINING", "OXYGENATING"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Instant Glow Facial",
@@ -265,7 +265,7 @@ const therapiesData = [
         description:
           "A rejuvenating facial designed to instantly brighten and refresh dull, tired skin. This luxurious treatment includes deep cleansing, gentle exfoliation, a radiance-boosting mask, and a soothing facial massage. Enriched with vitamin-rich serums and botanical extracts, it leaves your skin visibly glowing, smooth, and hydrated—perfect for special occasions or when you need that instant boost of radiance Ideal for all skin types",
         tags: ["INSTANT GLOW", "REJUVENATING", "ALL SKIN TYPES"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
       {
         name: "Organic Multi-Vitamin Soothing Facial",
@@ -274,7 +274,7 @@ const therapiesData = [
         description:
           "A deeply hydrating and calming facial designed for all skin types, especially sensitive or sun-exposed skin. This soothing treatment blends organic aloe vera and herbal extracts to reduce redness, heal irritation, and restore natural moisture balance. It nourishes the skin from within, leaving your complexion visibly refreshed, rejuvenated, and radiant. Ideal for all skin types",
         tags: ["HYDRATING", "CALMING", "ORGANIC"],
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/demo.jpeg?height=200&width=300",
       },
     ],
   },
@@ -468,7 +468,7 @@ function TherapyCard({ therapy }) {
             {" "}
             {/* Slightly increased image height */}
             <Image
-              src={therapy.image || "/placeholder.svg?height=200&width=300&query=spa therapy"}
+              src={therapy.image || "/demo.jpeg?height=200&width=300&query=spa therapy"}
               alt={therapy.name}
               layout="fill"
               objectFit="cover"
