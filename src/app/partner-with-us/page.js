@@ -165,6 +165,34 @@ export default function Component() {
                   </p>
                 </div>
               </div>
+              {/*  */}
+               <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="p-4">
+                  <TrendingUpIcon className="h-10 w-10 text-emerald-600 mb-4" style={{ fontSize: "40px" }} />
+                  <h3 className="text-xl font-semibold text-[#3A2F24]">  Spa Audits & Quality Control</h3>
+                </div>
+                <div className="p-4 pt-0">
+                  <p className="text-[#5C5C5C]">
+                         We specialize in professional spa audits and the implementation of robust quality control systems. 
+Our goal is to ensure consistently high service standards, enhance operational efficiency, and 
+deliver an exceptional guest experience every time.   
+                  </p>
+                </div>
+              </div>
+              {/*  */}
+               <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="p-4">
+                  <TrendingUpIcon className="h-10 w-10 text-emerald-600 mb-4" style={{ fontSize: "40px" }} />
+                  <h3 className="text-xl font-semibold text-[#3A2F24]">  Post-Launch Growth Support   </h3>
+                </div>
+                <div className="p-4 pt-0">
+                  <p className="text-[#5C5C5C]">
+                         We provide ongoing support through regular audits, staff training refreshers, and strategic 
+updates—ensuring your spa continues to grow, adapt, and remain competitive in a dynamic 
+market.  
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
