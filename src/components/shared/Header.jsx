@@ -25,7 +25,7 @@ export default function Header() {
     { name: "Partner with us", href: "/partner-with-us" },
     { name: "Services", href: "/services" },
     { name: "About Us", href: "/about-us" },
-    { name: "Location", href: "/spa-location" },
+    { name: "Spa Location", href: "/spa-location" },
        { name: "Shop", href: "/spa-products" },
     { name: "Contact Us", href: "/contact" },
   ]
