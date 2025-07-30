@@ -1,107 +1,53 @@
-"use client";
+"use client"
 
 export default function HomeWellness() {
   return (
-    <section
-      className="wellness-section"
-      style={{
-        backgroundImage: "url('/wellness-bg.jpg')",
-        backgroundSize: "auto 100%",
-        backgroundRepeat: "repeat-x",
-        backgroundPosition: "0% 50%",
-        padding: "3rem 2rem",
-        textAlign: "center",
-        color: "#ffffff",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
-      {/* Overlay */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          height: "100%",
-          width: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.4)",
-          zIndex: 1,
-        }}
-      />
+    <div className="bg-gradient-to-br from-stone-50 via-sage-50 to-lavender-50">
+      {/* Compact Full-Width Hero Section */}
+      <section className="w-full py-8">
+        <div className="w-full px-6 lg:px-6">
+          {/* Single Heading */}
+          <div className="text-center mb-6">
+            <h1 className="text-2xl lg:text-3xl font-light text-stone-700 mb-2">Our Story</h1>
+            <div className="w-12 h-px bg-sage-300 mx-auto"></div>
+          </div>
 
-      {/* Content */}
-      <div style={{ position: "relative", zIndex: 2 }}>
-        <h2
-          style={{
-            fontSize: "2rem",
-            marginBottom: "1rem",
-            background: "linear-gradient(90deg, #FFD700, #FFDF70)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontWeight: "bold",
-            display: "inline-block",
-          }}
-        >
-          Our Vision & Mission
-        </h2>
+          {/* Story Content - Paragraph Breaks */}
+          <div className="container mx-auto space-y-4">
+            <p className="text-sm text-stone-600 leading-relaxed font-light">
+              At SR Holistic Wellness, we believe that true luxury lies in authenticity, purity, and deep healing.
+              Founded with a vision to redefine wellness, our sanctuary blends timeless holistic traditions with the
+              elegance of modern care—delivering an experience that nourishes both body and soul.
+            </p>
 
-        <p
-          style={{
-            maxWidth: "700px",
-            margin: "0 auto 1.5rem auto",
-            fontSize: "1rem",
-            transition: "all 0.3s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = "#ffe8a3";
-            e.currentTarget.style.transform = "scale(1.02)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = "#ffffff";
-            e.currentTarget.style.transform = "scale(1)";
-          }}
-        >
-          At SR Holistic Wellness, we envision a world where self-care is sacred and healing is woven into daily life.
-          Our sanctuary blends traditional healing with modern spa therapies to help every guest discover inner
-          balance, outer beauty, and complete well-being.
-        </p>
+            <p className="text-sm text-stone-600 leading-relaxed font-light">
+              From the moment you enter SR, you are enveloped in a world of serenity, where every detail is designed
+              with intention. Our therapies are rooted in ancient healing practices and carried out by highly trained,
+              professional therapists who honor the individual needs of each guest.
+            </p>
 
-        <p
-          style={{
-            maxWidth: "700px",
-            margin: "0 auto",
-            fontSize: "1rem",
-            transition: "all 0.3s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = "#ffe8a3";
-            e.currentTarget.style.transform = "scale(1.02)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = "#ffffff";
-            e.currentTarget.style.transform = "scale(1)";
-          }}
-        >
-          Our mission is to provide transformative wellness experiences that nurture the mind, body, and spirit
-          using personalized treatments, natural products, and compassionate care.
-        </p>
-      </div>
+            <p className="text-sm text-stone-600 leading-relaxed font-light">
+              We use only the finest 100% pure, natural essential oils and premium plant-based beauty products,
+              handcrafted or curated to ensure they meet the highest standards of purity, sustainability, and efficacy.
+              Each ingredient we use tells a story—of nature, healing, and uncompromising quality.
+            </p>
 
-      {/* Background scroll animation */}
+            <p className="text-sm text-stone-600 leading-relaxed font-light">
+              SR Holistic Wellness is more than a spa—it's a destination for those seeking deeper connection, authentic
+              transformation, and radiant natural beauty. Whether you're here for healing, relaxation, or renewal, our
+              commitment remains the same: luxury with purpose, care with integrity, and wellness that is truly
+              holistic.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Minimal Spa Colors CSS */}
       <style jsx>{`
-        .wellness-section {
-          animation: scrollBackground 20s linear infinite;
-        }
-
-        @keyframes scrollBackground {
-          from {
-            background-position-x: 0%;
-          }
-          to {
-            background-position-x: -100%;
-          }
-        }
+        .text-sage-600 { color: #7c9885; }
+        .text-sage-700 { color: #6b8471; }
+        .bg-sage-300 { background-color: #b8ccbc; }
       `}</style>
-    </section>
-  );
+    </div>
+  )
 }

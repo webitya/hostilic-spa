@@ -26,6 +26,7 @@ export default function Header() {
     { name: "Services", href: "/services" },
     { name: "About Us", href: "/about-us" },
     { name: "Location", href: "/spa-location" },
+       { name: "Shop", href: "/spa-products" },
     { name: "Contact Us", href: "/contact" },
   ]
   const serviceItems = [] // This array is empty in the original code, keeping it as is.

@@ -152,22 +152,19 @@ export default function Component() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Corporate Support Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container px-4 md:px-6 text-center mx-auto max-w-7xl">
-            <div className="max-w-3xl mx-auto space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#3A2F24]">
-                Dedicated Corporate Support
-              </h2>
-              <p className="text-[#5C5C5C] md:text-xl">
-                Our specialized corporate team streamlines spa operations and ensures that our partners’ wellness
+                   <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="p-4">
+                  <TrendingUpIcon className="h-10 w-10 text-emerald-600 mb-4" style={{ fontSize: "40px" }} />
+                  <h3 className="text-xl font-semibold text-[#3A2F24]">  Dedicated Corporate Support</h3>
+                </div>
+                <div className="p-4 pt-0">
+                  <p className="text-[#5C5C5C]">
+                         Our specialized corporate team streamlines spa operations and ensures that our partners’ wellness
                 programs run efficiently and profitably. We handle the operational complexities, allowing you to focus
                 on delivering a complete guest experience.
-              </p>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
