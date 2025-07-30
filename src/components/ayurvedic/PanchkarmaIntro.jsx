@@ -35,6 +35,16 @@ const ayurvedicContent = {
     image: "/demo.jpeg?height=200&width=300",
   },
   {
+    name: "Abhyangam Ayurvedic",
+    duration: "60 Minutes",
+    description:
+      "Combined with ancient ceremonies and rituals, this holistic ayurvedic rejuvenation therapy consists of vigorous vitality, balancing of tri-doshas and has an overall rejuvenating effect on the body, mind and soul. Which makes deep healing and pain-relieving benefit..",
+    price: "1600 INR",
+    icon: Sparkles,
+    tags: ["REJUVENATION", "RESTORING"],
+    image: "/demo.jpeg?height=200&width=300",
+  },
+  {
     name: "KIZHI - Hot Bundles Massage",
     duration: "60 Minutes",
     description:
