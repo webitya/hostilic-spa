@@ -95,7 +95,7 @@ const therapiesData = [
         description:
           "A traditional healing art rooted in ancient Thai and Indian Ayurvedic wisdom, this dry massage blends acupressure, energy line work, and assisted yoga postures. Performed fully clothed without oils, it gently stretches the body, improves flexibility, enhances circulation, and promotes deep relaxation. Ideal for releasing muscular tension and restoring natural body balance through mindful movement and therapeutic touch.",
         tags: ["PAIN RELIEF", "IMPROVED FLEXIBILITY", "BOOSTS ENERGY"],
-        image: "public/Signature Foot massage.png?height=200&width=300",
+        image: "/Signature Foot massage.png?height=200&width=300",
       },
       {
         name: "Traditional Hawaiian Healing Massage",
@@ -104,7 +104,7 @@ const therapiesData = [
         description:
           "Immerse yourself in the sacred art of Lomi Lomi, the traditional Hawaiian healing massage known as the 'loving hands' technique. This deeply relaxing therapy uses rhythmic, flowing forearm strokes that mimic the ocean's waves—designed to release tension, improve circulation, and balance energy flow.",
         tags: ["HEALING", "STRESS RELIEF", "LYMPHATIC FLOW"],
-        image: "public/Signature Foot massage.png?height=200&width=300",
+        image: "/Signature Foot massage.png?height=200&width=300",
       },
       {
         name: "Traditional Balinese Therapy",
