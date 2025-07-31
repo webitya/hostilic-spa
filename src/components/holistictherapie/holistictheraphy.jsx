@@ -156,7 +156,7 @@ const therapiesData = [
         description:
           "A gentle yet effective exfoliation using finely ground walnut shells blended with nourishing oils and natural cream. It removes dead skin cells, unclogs pores, and leaves the skin feeling soft, radiant, and refreshed. Ideal for dull or rough skin, this scrub enhances natural glow and promotes healthy circulation.",
         tags: ["GENTLE EXFOLIATION", "NOURISHING", "WALNUT"],
-        image: "/Signature Foot massage.png?height=200&width=300",
+        image: "/wellness-bg.jpg?height=200&width=300",
       },
       {
         name: "DEAD SEA CLAY BODY WRAP",
@@ -165,7 +165,7 @@ const therapiesData = [
         description:
           "A rejuvenating full-body wrap using mineral-rich Dead Sea clay known for its detoxifying and skin-toning properties. This treatment helps draw out impurities, reduce water retention, and improve skin texture and firmness. Deeply relaxing and therapeutic, it leaves your body feeling purified, nourished, and refreshed.",
         tags: ["DETOXIFYING", "SKIN TONING", "DEAD SEA CLAY"],
-        image: "/Signature Foot massage.png?height=200&width=300",
+        image: "/wellness-bg.jpg?height=200&width=300",
       },
       {
         name: "INDIAN MUD THERAPY",
@@ -174,7 +174,7 @@ const therapiesData = [
         description:
           "Traditional healing treatment using mineral-rich Indian clay to detoxify, nourish, and tone the skin. The warm mud promotes deep relaxation, relieves muscle tension, and improves blood circulation. Perfect for restoring balance, reducing inflammation, and revitalizing both body and mind.",
         tags: ["TRADITIONAL", "DETOXIFYING", "INDIAN MUD"],
-        image: "/Signature Foot massage.png?height=200&width=300",
+        image: "/wellness-bg.jpg?height=200&width=300",
       },
     ],
   },
