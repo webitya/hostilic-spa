@@ -104,7 +104,7 @@ const therapiesData = [
         description:
           "Immerse yourself in the sacred art of Lomi Lomi, the traditional Hawaiian healing massage known as the 'loving hands' technique. This deeply relaxing therapy uses rhythmic, flowing forearm strokes that mimic the ocean's waves—designed to release tension, improve circulation, and balance energy flow.",
         tags: ["HEALING", "STRESS RELIEF", "LYMPHATIC FLOW"],
-        image: "/Signature Foot massage.png?height=200&width=300",
+        image: "/wellness-bg.jpg?height=200&width=300",
       },
       {
         name: "Traditional Balinese Therapy",
