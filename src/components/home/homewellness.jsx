@@ -4,43 +4,41 @@ import { motion } from "framer-motion"
 
 export default function HomeWellness() {
   return (
-    <div className="relative bg-gradient-to-br from-stone-50 via-[#f9faf8] to-[#f9f8fc]">
-      {/* Compact Full-Width Hero Section */}
+    <div className="bg-gradient-to-br from-stone-50 via-[#f9faf8] to-[#f9f8fc] overflow-hidden">
+      {/* Full-Width Hero Section */}
       <section className="w-full py-12 md:py-16">
-        <div className="w-full px-6 lg:px-8">
-          {/* Single Heading */}
-          <div className="text-center mb-8">
+        <div className="w-full px-6 lg:px-12">
+          {/* Heading */}
+          <div className="text-center mb-10">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-2xl lg:text-3xl font-light text-sage-700 mb-3"
+              className="text-2xl lg:text-4xl font-light text-[#6b8471] mb-3"
             >
               Our Story
             </motion.h1>
 
             <motion.div
               initial={{ width: 0 }}
-              whileInView={{ width: "3rem" }}
+              whileInView={{ width: "4rem" }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
               viewport={{ once: true }}
-              className="h-0.5 bg-sage-300 mx-auto rounded-full"
+              className="h-0.5 bg-[#b8ccbc] mx-auto rounded-full"
             />
           </div>
 
-          {/* Story Content - Paragraph Breaks */}
+          {/* Story Content */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={{
               hidden: {},
-              visible: {
-                transition: { staggerChildren: 0.25 },
-              },
+              visible: { transition: { staggerChildren: 0.25 } },
             }}
-            className=" mx-auto max-w-prose space-y-6"
+            className="mx-auto space-y-6 text-center"
           >
             {[
               "At SR Holistic Wellness, we believe that true luxury lies in authenticity, purity, and deep healing. Founded with a vision to redefine wellness, our sanctuary blends timeless holistic traditions with the elegance of modern care—delivering an experience that nourishes both body and soul.",
@@ -62,13 +60,6 @@ export default function HomeWellness() {
           </motion.div>
         </div>
       </section>
-
-      {/* Minimal Spa Colors CSS */}
-      <style jsx>{`
-        .text-sage-600 { color: #7c9885; }
-        .text-sage-700 { color: #6b8471; }
-        .bg-sage-300 { background-color: #b8ccbc; }
-      `}</style>
     </div>
   )
 }
