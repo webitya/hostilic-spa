@@ -9,14 +9,13 @@ import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
 import PhoneIcon from "@mui/icons-material/Phone"
 import SpaIcon from "@mui/icons-material/Spa"
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [dropdownOpen, setDropdownOpen] = useState(false) // Still present from original, though not used for services dropdown
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false) // Still present from original, though not used for services dropdown
-  const dropdownRef = useRef(null) // Still present from original, though not used for services dropdown
-  const pathname = usePathname() // usePathname is a Client Component hook [^2]
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+  const dropdownRef = useRef(null)
+  const pathname = usePathname()
 
   const menuItems = [
     { name: "Home", href: "/" },
@@ -26,10 +25,10 @@ export default function Header() {
     { name: "Services", href: "/services" },
     { name: "About Us", href: "/about-us" },
     { name: "Spa Location", href: "/spa-location" },
-       { name: "Shop", href: "/spa-products" },
+    { name: "Shop", href: "/spa-products" },
     { name: "Contact Us", href: "/contact" },
   ]
-  const serviceItems = [] // This array is empty in the original code, keeping it as is.
+  const serviceItems = []
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -59,8 +58,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-white/98 backdrop-blur-lg py-3 px-4 lg:px-6 border-b border-gray-100 shadow-sm z-50">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto">
+      <header className="fixed top-0 left-0 w-full bg-white/98 backdrop-blur-lg py-3 px-1 lg:px-2 border-b border-gray-100 shadow-sm z-50">
+        <nav className="flex items-center justify-between  mx-auto">
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-2.5 select-none group">
             <div className="relative overflow-hidden rounded-lg">
@@ -77,6 +76,7 @@ export default function Header() {
               <span className="text-xs text-amber-600 font-medium hidden sm:block">Mind • Body • Soul</span>
             </div>
           </Link>
+
           {/* DESKTOP MENU */}
           <ul className="hidden lg:flex items-center gap-1 list-none m-0 p-0">
             {menuItems.map((item) => (
@@ -84,33 +84,24 @@ export default function Header() {
                 {item.name === "Contact Us" ? (
                   <Link
                     href={item.href}
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 text-white px-3 py-2 shadow-md hover:from-amber-600 hover:to-orange-700 transition-all duration-300"
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 text-white px-4 py-2.5 shadow-md hover:from-amber-600 hover:to-orange-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                   >
                     {item.name}
                   </Link>
                 ) : (
                   <Link
                     href={item.href}
-                    className={`relative px-4 py-2.5 text-sm font-semibold transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 ${
-                      isActive(item.href)
-                        ? "text-amber-700 bg-gradient-to-r from-amber-50 to-orange-50 shadow-sm"
-                        : "text-gray-700 hover:text-amber-700"
+                    className={`relative px-2 py-2.5 text-sm font-semibold transition-colors duration-200 rounded-xl ${
+                      isActive(item.href) ? "text-amber-600" : "text-gray-700 hover:text-amber-600"
                     }`}
                   >
                     {item.name}
-                    {isActive(item.href) && (
-                      <motion.div
-                        layoutId="activeTab"
-                        className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-amber-600 rounded-full"
-                        initial={false}
-                        transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                      />
-                    )}
                   </Link>
                 )}
               </li>
             ))}
           </ul>
+
           {/* HAMBURGER MENU ICON */}
           <motion.button
             onClick={() => setMenuOpen((p) => !p)}
@@ -124,6 +115,7 @@ export default function Header() {
           </motion.button>
         </nav>
       </header>
+
       {/* MOBILE MENU OVERLAY */}
       <AnimatePresence>
         {menuOpen && (
@@ -158,8 +150,9 @@ export default function Header() {
                   <CloseIcon fontSize="small" />
                 </button>
               </div>
+
               {/* Menu Items */}
-              <div className="p-4 space-y-1">
+              <div className="p-4 space-y-2">
                 {menuItems.map((item, index) => (
                   <motion.div
                     key={item.name}
@@ -169,24 +162,22 @@ export default function Header() {
                   >
                     <Link
                       href={item.href}
-                      className={`flex items-center justify-between px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 ${
-                        isActive(item.href)
-                          ? "text-amber-700 bg-gradient-to-r from-amber-50 to-orange-50 shadow-sm"
-                          : "text-gray-700 hover:text-amber-700 hover:bg-amber-50"
+                      className={`flex items-center px-4 py-3.5 text-base font-medium rounded-xl transition-colors duration-200 ${
+                        isActive(item.href) ? "text-amber-600" : "text-gray-700 hover:text-amber-600"
                       }`}
                       onClick={() => setMenuOpen(false)}
                     >
                       <span>{item.name}</span>
-                      {isActive(item.href) && <FiberManualRecordIcon fontSize="small" className="text-amber-600" />}
                     </Link>
                   </motion.div>
                 ))}
               </div>
+
               {/* Call Button */}
               <div className="p-4 border-t border-gray-100 mt-4">
                 <motion.a
                   href="tel:+916306366978"
-                  className="flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 text-white px-6 py-3.5 rounded-xl font-semibold shadow-lg w-full"
+                  className="flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 text-white px-6 py-3.5 rounded-xl font-semibold shadow-lg w-full hover:from-amber-600 hover:to-orange-700 transition-all duration-300"
                   whileTap={{ scale: 0.98 }}
                   onClick={() => setMenuOpen(false)}
                 >
@@ -194,6 +185,7 @@ export default function Header() {
                   <span>+91 6306366978</span>
                 </motion.a>
               </div>
+
               {/* Footer */}
               <div className="p-4 text-center">
                 <p className="text-xs text-gray-500 flex items-center justify-center gap-2">
