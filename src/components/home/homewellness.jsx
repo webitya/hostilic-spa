@@ -38,7 +38,7 @@ export default function HomeWellness() {
               hidden: {},
               visible: { transition: { staggerChildren: 0.25 } },
             }}
-            className="mx-auto space-y-6 text-center"
+            className="mx-auto space-y-6 text-left"
           >
             {[
               "At SR Holistic Wellness, we believe that true luxury lies in authenticity, purity, and deep healing. Founded with a vision to redefine wellness, our sanctuary blends timeless holistic traditions with the elegance of modern care—delivering an experience that nourishes both body and soul.",
