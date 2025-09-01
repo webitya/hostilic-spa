@@ -155,15 +155,9 @@ export default function TherapyDetailPage() {
                     Book via WhatsApp
                   </a>
 
-                  <button className="w-full inline-flex items-center justify-center gap-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
-                    <Calendar className="w-5 h-5" />
-                    Schedule Appointment
-                  </button>
+        
 
-                  <button className="w-full inline-flex items-center justify-center gap-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-full transition-all duration-300">
-                    <MapPin className="w-5 h-5" />
-                    Visit Our Spa
-                  </button>
+               
                 </div>
 
                 {/* Additional Info */}
