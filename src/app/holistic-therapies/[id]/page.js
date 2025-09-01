@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { useParams } from "next/navigation"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ArrowLeft, Clock, IndianRupee, CheckCircle, Phone, Calendar, MapPin, Star } from "lucide-react"
+import { ArrowLeft, Clock, IndianRupee, CheckCircle, Phone, Star } from "lucide-react"
 
 import { findTherapyById } from "../../../components/data/therapies-data"
 

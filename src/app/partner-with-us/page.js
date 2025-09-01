@@ -144,7 +144,7 @@ export default function Component() {
         {/* Features Section */}
         <section className="w-full py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="container px-4 md:px-6 mx-auto max-w-7xl">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
               {features.map((feature, index) => {
                 const IconComponent = feature.icon
                 return (
