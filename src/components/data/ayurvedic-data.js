@@ -25,7 +25,7 @@ export const ayurvedicTreatments = [
       "Stimulates blood circulation",
       "Balances Vata, Pitta, Kapha",
     ],
-    price: "1600 INR",
+    price: "2600 INR",
     tags: ["REJUVENATION", "RESTORING"],
     image: "/placeholder.svg?height=200&width=300",
   },

@@ -431,7 +431,7 @@ export const therapiesData = [
     items: [
       {
         id: generateTherapyId("Instant Indulgence Chakra Head & Shoulder Massage"),
-        name: "Instant Indulgence Chakra Head & Shoulder Massage",
+        name: "Chakra Head & Shoulder Massage",
         duration: "30 minutes",
         price: "1200 INR",
         description:
