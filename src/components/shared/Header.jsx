@@ -3,23 +3,27 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
+import { therapiesData } from "../data/therapies-data"
 
 // Reverting to original @mui/icons-material imports
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
 import PhoneIcon from "@mui/icons-material/Phone"
 import SpaIcon from "@mui/icons-material/Spa"
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+  const [mobileHolisticDropdownOpen, setMobileHolisticDropdownOpen] = useState(false)
+  const [holisticDropdownOpen, setHolisticDropdownOpen] = useState(false)
   const dropdownRef = useRef(null)
+  const holisticDropdownRef = useRef(null)
   const pathname = usePathname()
 
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "Holistic Therapy", href: "/holistic-therapies" },
+    { name: "Holistic Therapy", href: "/therapies", hasDropdown: true },
     { name: "Ayurvedic Panchkarma", href: "/ayurvedic-panchkarma" },
     { name: "Partner with us", href: "/partner-with-us" },
     { name: "Services", href: "/services" },
@@ -30,10 +34,22 @@ export default function Header() {
   ]
   const serviceItems = []
 
+  const therapyCategories = [...new Set(therapiesData.map((therapy) => therapy.category))]
+
+  const generateCategorySlug = (category) => {
+    return category
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "")
+  }
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropdownOpen(false)
+      }
+      if (holisticDropdownRef.current && !holisticDropdownRef.current.contains(event.target)) {
+        setHolisticDropdownOpen(false)
       }
     }
     document.addEventListener("mousedown", handleClickOutside)
@@ -43,7 +59,8 @@ export default function Header() {
   // Close mobile menu when route changes
   useEffect(() => {
     setMenuOpen(false)
-    setMobileServicesOpen(false)
+    setMobileHolisticDropdownOpen(false)
+    setHolisticDropdownOpen(false)
   }, [pathname])
 
   const isActive = (href) => {
@@ -80,7 +97,7 @@ export default function Header() {
           {/* DESKTOP MENU */}
           <ul className="hidden lg:flex items-center gap-1 list-none m-0 p-0">
             {menuItems.map((item) => (
-              <li key={item.name}>
+              <li key={item.name} className="relative">
                 {item.name === "Contact Us" ? (
                   <Link
                     href={item.href}
@@ -88,6 +105,52 @@ export default function Header() {
                   >
                     {item.name}
                   </Link>
+                ) : item.hasDropdown ? (
+                  <div ref={holisticDropdownRef} className="relative">
+                    <button
+                      onClick={() => setHolisticDropdownOpen(!holisticDropdownOpen)}
+                      className={`relative px-2 py-2.5 text-sm font-semibold transition-colors duration-200 rounded-xl flex items-center gap-1 ${
+                        isActive(item.href) ? "text-amber-600" : "text-gray-700 hover:text-amber-600"
+                      }`}
+                    >
+                      {item.name}
+                      <KeyboardArrowDownIcon
+                        fontSize="small"
+                        className={`transition-transform duration-200 ${holisticDropdownOpen ? "rotate-180" : ""}`}
+                      />
+                    </button>
+
+                    <AnimatePresence>
+                      {holisticDropdownOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                        >
+                          <Link
+                            href="/therapies"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors"
+                            onClick={() => setHolisticDropdownOpen(false)}
+                          >
+                            All Therapies
+                          </Link>
+                          <div className="border-t border-gray-100 my-1"></div>
+                          {therapyCategories.map((category) => (
+                            <Link
+                              key={category}
+                              href={`/therapies/${generateCategorySlug(category)}`}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors"
+                              onClick={() => setHolisticDropdownOpen(false)}
+                            >
+                              {category}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 ) : (
                   <Link
                     href={item.href}
@@ -160,15 +223,61 @@ export default function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <Link
-                      href={item.href}
-                      className={`flex items-center px-4 py-3.5 text-base font-medium rounded-xl transition-colors duration-200 ${
-                        isActive(item.href) ? "text-amber-600" : "text-gray-700 hover:text-amber-600"
-                      }`}
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      <span>{item.name}</span>
-                    </Link>
+                    {item.hasDropdown ? (
+                      <div>
+                        <button
+                          onClick={() => setMobileHolisticDropdownOpen(!mobileHolisticDropdownOpen)}
+                          className={`flex items-center justify-between w-full px-4 py-3.5 text-base font-medium rounded-xl transition-colors duration-200 ${
+                            isActive(item.href) ? "text-amber-600" : "text-gray-700 hover:text-amber-600"
+                          }`}
+                        >
+                          <span>{item.name}</span>
+                          <KeyboardArrowDownIcon
+                            fontSize="small"
+                            className={`transition-transform duration-200 ${mobileHolisticDropdownOpen ? "rotate-180" : ""}`}
+                          />
+                        </button>
+                        <AnimatePresence>
+                          {mobileHolisticDropdownOpen && (
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: "auto" }}
+                              exit={{ opacity: 0, height: 0 }}
+                              transition={{ duration: 0.2 }}
+                              className="ml-4 mt-2 space-y-1"
+                            >
+                              <Link
+                                href="/therapies"
+                                className="block px-4 py-2 text-sm text-gray-600 hover:text-amber-600 rounded-lg transition-colors"
+                                onClick={() => setMenuOpen(false)}
+                              >
+                                All Therapies
+                              </Link>
+                              {therapyCategories.map((category) => (
+                                <Link
+                                  key={category}
+                                  href={`/therapies/${generateCategorySlug(category)}`}
+                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-amber-600 rounded-lg transition-colors"
+                                  onClick={() => setMenuOpen(false)}
+                                >
+                                  {category}
+                                </Link>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className={`flex items-center px-4 py-3.5 text-base font-medium rounded-xl transition-colors duration-200 ${
+                          isActive(item.href) ? "text-amber-600" : "text-gray-700 hover:text-amber-600"
+                        }`}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        <span>{item.name}</span>
+                      </Link>
+                    )}
                   </motion.div>
                 ))}
               </div>
