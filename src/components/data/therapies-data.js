@@ -9,6 +9,14 @@ export function generateTherapyId(therapyName) {
     .replace(/^-|-$/g, "")
 }
 
+export function generateCategorySlug(categoryName) {
+  return categoryName
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\s+/g, "-")
+    .trim()
+}
+
 /* Optional helper: find therapy by id */
 export function findTherapyById(id) {
   for (let c = 0; c < therapiesData.length; c++) {

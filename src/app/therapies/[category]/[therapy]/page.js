@@ -5,23 +5,29 @@ import { useParams } from "next/navigation"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowLeft, Clock, IndianRupee, CheckCircle, Phone, Star } from "lucide-react"
-
-import { findTherapyById } from "../../../components/data/therapies-data"
+import { findTherapyById } from "../../../../components/data/therapies-data"
 
 export default function TherapyDetailPage() {
   const [therapy, setTherapy] = useState(null)
   const [category, setCategory] = useState("")
+  const [categorySlug, setCategorySlug] = useState("")
   const params = useParams()
 
   useEffect(() => {
-    if (params.id) {
-      const result = findTherapyById(params.id)
+    if (params.therapy) {
+      const result = findTherapyById(params.therapy)
       if (result) {
         setTherapy(result.therapy)
         setCategory(result.category)
+        setCategorySlug(
+          result.category
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, "")
+            .replace(/\s+/g, "-"),
+        )
       }
     }
-  }, [params.id])
+  }, [params.therapy])
 
   if (!therapy) {
     return (
@@ -43,20 +49,16 @@ export default function TherapyDetailPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative h-96 overflow-hidden">
-        <img
-          src={therapy.image || "/wellness-bg.jpg?height=400&width=800&query=spa therapy"}
-          alt={therapy.name}
-          className="w-full h-full object-cover"
-        />
+        <img src={therapy.image || "/placeholder.svg"} alt={therapy.name} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
 
         {/* Back Button */}
         <Link
-          href="/holistic-therapies"
-          className="absolute top-6 left-6 inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-full hover:bg-white transition-all duration-300 shadow-lg"
+          href={`/therapies/${categorySlug}`}
+          className="absolute top-20 left-6 inline-flex items-center gap-2 bg-white text-gray-800 px-4 py-2 rounded-full hover:bg-gray-50 transition-all duration-300 shadow-xl border border-gray-200 z-10"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to Therapies
+          <span className="font-medium">Back to {category}</span>
         </Link>
 
         {/* Hero Content */}
@@ -97,6 +99,23 @@ export default function TherapyDetailPage() {
                 <p className="text-gray-700 leading-relaxed mb-6">{therapy.description}</p>
               </div>
 
+              {/* Key Highlights */}
+              {therapy.ssss && therapy.ssss.length > 0 && (
+                <div className="mt-8 mb-8">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Key Highlights</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {therapy.ssss.map((highlight, index) => (
+                      <span
+                        key={index}
+                        className="bg-gradient-to-r from-teal-600 to-teal-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
+                      >
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Benefits */}
               {therapy.tags && therapy.tags.length > 0 && (
                 <div className="mt-8">
@@ -110,6 +129,23 @@ export default function TherapyDetailPage() {
                         <CheckCircle className="w-5 h-5 text-teal-600 flex-shrink-0" />
                         <span className="text-gray-700 font-medium">{tag}</span>
                       </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Best For */}
+              {therapy.bestFor && therapy.bestFor.length > 0 && (
+                <div className="mt-8">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Best For</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {therapy.bestFor.map((item, index) => (
+                      <span
+                        key={index}
+                        className="bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-medium border border-teal-200"
+                      >
+                        {item}
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -154,10 +190,6 @@ export default function TherapyDetailPage() {
                     <Phone className="w-5 h-5" />
                     Book via WhatsApp
                   </a>
-
-        
-
-               
                 </div>
 
                 {/* Additional Info */}
