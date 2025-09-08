@@ -558,7 +558,7 @@ export const therapiesData = [
         price: "2500 INR",
         description:
           "A deeply hydrating and calming facial designed for all skin types, especially sensitive or sun-exposed skin. This soothing treatment blends organic aloe vera and herbal extracts to reduce redness, heal irritation, and restore natural moisture balance. It nourishes the skin from within, leaving your complexion visibly refreshed, rejuvenated, and radiant. Ideal for all skin types",
-        ssss: ["NATURAL GLOW", "DEEP NOURISHMENT", "IMPROVED SKIN BRIGHTNESS"],
+        ssss: ["NATURAL GLOW", "DEEP NOURISHMENT", "IMPROVED SKIN BRIGHTNESS "],
         tags: [
           "Calms redness and irritation",
           "Replenishes moisture barrier",
@@ -566,7 +566,7 @@ export const therapiesData = [
           "Restores a comfortable, healthy glow",
         ],
         bestFor: ["Sensitive skin", "Sun-exposed", "Moisture barrier support"],
-        image: "/multivitamin.jpg?height=200&width=300",
+        image: "/multivitamin.jpg?height=200&width=301",
       },
     ],
   },
