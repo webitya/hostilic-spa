@@ -173,7 +173,7 @@ export const therapiesData = [
           "Improves overall body awareness",
         ],
         bestFor: ["Oil-free option", "Energy balancing", "Gentle but firm pressure"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/shiastu-massage.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Thai Yoga Stretching (Dry massage)"),
@@ -209,7 +209,7 @@ export const therapiesData = [
           "Induces a meditative relaxation state",
         ],
         bestFor: ["Emotional soothing", "Full-body flow", "Gentle, nurturing touch"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/hawaaiian-lomi-lomi.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Traditional Balinese Therapy"),
@@ -309,7 +309,7 @@ export const therapiesData = [
           "Leaves skin soft and moisturized",
         ],
         bestFor: ["Gentle exfoliation", "Sensitive to salts", "Maintenance between facials"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/wallnut.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("DEAD SEA CLAY BODY WRAP"),
@@ -326,7 +326,7 @@ export const therapiesData = [
           "Infuses skin with minerals for softness",
         ],
         bestFor: ["Detox ritual", "Firming feel", "Post-travel reset"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/deadseaone.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("INDIAN MUD THERAPY"),
@@ -343,7 +343,7 @@ export const therapiesData = [
           "Leaves skin comfortable and refreshed",
         ],
         bestFor: ["Gentle detox", "Skin comfort", "Relaxation without massage oil"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/mud.jpg?height=200&width=300",
       },
     ],
   },
@@ -452,7 +452,7 @@ export const therapiesData = [
           "Supports better sleep onset",
         ],
         bestFor: ["Desk strain", "Headaches", "Short break relief"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/chakrahead.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Soothing Back Massage"),
@@ -532,7 +532,7 @@ export const therapiesData = [
           "Immediate brightening and freshness",
         ],
         bestFor: ["Congested skin", "Combination/oily", "Quick refresh"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/deepcleasingf.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Instant Glow Facial"),
@@ -549,7 +549,7 @@ export const therapiesData = [
           "Facial massage relaxes and depuffs",
         ],
         bestFor: ["Events and photos", "Dullness", "All skin types"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/instantglowfacial.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Organic Multi-Vitamin Soothing Facial"),
@@ -566,7 +566,7 @@ export const therapiesData = [
           "Restores a comfortable, healthy glow",
         ],
         bestFor: ["Sensitive skin", "Sun-exposed", "Moisture barrier support"],
-        image: "/wellness-bg.jpg?height=200&width=300",
+        image: "/multivitamin.jpg?height=200&width=300",
       },
     ],
   },
