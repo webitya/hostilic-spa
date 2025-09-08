@@ -67,7 +67,7 @@ export default function CategoryPage() {
         {/* Back Button */}
         <Link
           href="/therapies"
-          className="absolute top-20 left-6 inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-full hover:bg-white transition-all duration-300 shadow-lg z-10"
+          className="absolute top-28 left-6 inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-full hover:bg-white transition-all duration-300 shadow-lg z-10"
         >
           <ArrowLeft className="w-4 h-4" />
           All Therapies
