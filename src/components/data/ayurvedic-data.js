@@ -13,7 +13,7 @@ export const ayurvedicTreatments = [
     ],
     price: "3200 INR",
     tags: ["MIND RELAXATION", "NERVOUS SYSTEM", "BLISSFUL STATE"],
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/shirodhara01.jpg?height=200&width=300",
   },
   {
     name: "Abhyangam Ayurvedic",
@@ -27,7 +27,7 @@ export const ayurvedicTreatments = [
     ],
     price: "2600 INR",
     tags: ["REJUVENATION", "RESTORING"],
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/abhyangam01.jpg?height=200&width=300",
   },
   {
     name: "KIZHI - Hot Bundles Massage",
@@ -41,7 +41,7 @@ export const ayurvedicTreatments = [
     ],
     price: "3000 INR",
     tags: ["HERBAL BUNDLES", "MUSCLE RELAXATION", "DETOX"],
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/kizi01.jpg?height=200&width=300",
   },
   {
     name: "AYURVEDIC POTLI MASSAGE",
@@ -55,7 +55,7 @@ export const ayurvedicTreatments = [
     ],
     price: "3500 INR",
     tags: ["STRESS RELIEF", "CIRCULATION", "NECK & SHOULDER"],
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/aurvedicpotli01.jpg?height=200&width=300",
   },
   {
     name: "UDWARTHANANAM - Herbal Detox Therapy",
@@ -69,7 +69,7 @@ export const ayurvedicTreatments = [
     ],
     price: "2900 INR",
     tags: ["DEEP TISSUE", "HERBAL POWDER", "DETOX"],
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/udhartanam01.jpg?height=200&width=300",
   },
   {
     name: "VASTI",
@@ -84,7 +84,7 @@ export const ayurvedicTreatments = [
     ],
     price: "2000 INR",
     tags: ["OIL RETENTION", "SKELETAL HEALTH", "NERVOUS SYSTEM"],
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/vasti01.jpg?height=200&width=300",
   },
 ]
 
