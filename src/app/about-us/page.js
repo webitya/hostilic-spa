@@ -132,7 +132,7 @@ export default function AboutUsPage() {
   className="py-16 bg-gradient-to-b from-stone-50 via-white to-stone-100 relative"
   aria-labelledby="methodology-heading"
 >
-  <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
+  <div className="max-w-6xl mx-auto px-4 lg:px-8">
     {/* Section Heading */}
     <div className="text-center mb-12">
       <h2
@@ -141,8 +141,8 @@ export default function AboutUsPage() {
       >
         Our Methodology
       </h2>
-      <div className="w-16 h-1 bg-gradient-to-r from-sage-400 to-lavender-400 mx-auto rounded-full"></div>
-      <p className="mt-4 text-stone-700 text-sm lg:text-base max-w-2xl mx-auto font-light">
+      <div className="w-16 h-1 mx-auto rounded-full bg-gradient-to-r from-green-300 to-purple-300"></div>
+      <p className="mt-4 text-stone-800 text-sm lg:text-base max-w-2xl mx-auto font-light leading-relaxed">
         A balanced approach combining spiritual alignment and grounding practices
         for holistic growth and clarity.
       </p>
@@ -151,7 +151,8 @@ export default function AboutUsPage() {
     {/* Methodology Grid */}
     <div className="grid lg:grid-cols-2 gap-8">
       {/* S-Meaning */}
-      <article className="relative group bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+      <article className="relative bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/r.jpg"
@@ -159,23 +160,19 @@ export default function AboutUsPage() {
             alt="S-Meaning illustration"
             className="object-cover opacity-40 group-hover:opacity-50 transition-opacity"
           />
-          {/* Dark overlay for readability */}
-          <div
-            className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"
-            aria-hidden="true"
-          ></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"></div>
         </div>
 
         <div className="relative z-10 p-7">
           <div className="flex items-start gap-4 mb-5">
-            <div className="p-3 bg-lavender-100 rounded-xl shadow-inner">
-              <Crown className="w-5 h-5 text-lavender-700" aria-hidden="true" />
+            <div className="p-3 bg-orange-100 rounded-xl shadow-inner">
+              <Crown className="w-5 h-5 text-orange-700" />
             </div>
             <div>
               <h3 className="text-xl font-semibold text-stone-900 mb-1 drop-shadow-sm">
                 S-Meaning
               </h3>
-              <p className="text-xs text-lavender-700 font-medium tracking-wide drop-shadow-sm">
+              <p className="text-xs text-orange-700 font-medium tracking-wide drop-shadow-sm">
                 Crown Chakra Alignment (Sahasrara)
               </p>
             </div>
@@ -192,7 +189,7 @@ export default function AboutUsPage() {
               (tag, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 bg-lavender-50 text-black-700 rounded-full text-xs font-medium border border-lavender-200 shadow-sm"
+                  className="px-3 py-1 bg-purple-50 text-stone-900 rounded-full text-xs font-medium border border-purple-200 shadow-sm"
                 >
                   {tag}
                 </span>
@@ -203,7 +200,8 @@ export default function AboutUsPage() {
       </article>
 
       {/* R-Meaning */}
-      <article className="relative group bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+      <article className="relative bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/s.jpg"
@@ -211,23 +209,19 @@ export default function AboutUsPage() {
             alt="R-Meaning illustration"
             className="object-cover opacity-40 group-hover:opacity-50 transition-opacity"
           />
-          {/* Dark overlay for readability */}
-          <div
-            className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"
-            aria-hidden="true"
-          ></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"></div>
         </div>
 
         <div className="relative z-10 p-7">
           <div className="flex items-start gap-4 mb-5">
-            <div className="p-3 bg-sage-100 rounded-xl shadow-inner">
-              <User className="w-5 h-5 text-sage-700" aria-hidden="true" />
+            <div className="p-3 bg-orange-100 rounded-xl shadow-inner">
+              <User className="w-5 h-5 text-orange-700" />
             </div>
             <div>
               <h3 className="text-xl font-semibold text-stone-900 mb-1 drop-shadow-sm">
                 R-Meaning
               </h3>
-              <p className="text-xs text-black-700 font-medium tracking-wide drop-shadow-sm">
+              <p className="text-xs text-orange-700 font-medium tracking-wide drop-shadow-sm">
                 Root Chakra Activation (Muladhara)
               </p>
             </div>
@@ -243,7 +237,7 @@ export default function AboutUsPage() {
             {["Grounding", "Stability", "Earth Connection"].map((tag, i) => (
               <span
                 key={i}
-                className="px-3 py-1 bg-sage-50 text-black-700 rounded-full text-xs font-medium border border-sage-200 shadow-sm"
+                className="px-3 py-1 bg-green-50 text-stone-900 rounded-full text-xs font-medium border border-green-200 shadow-sm"
               >
                 {tag}
               </span>
@@ -254,6 +248,7 @@ export default function AboutUsPage() {
     </div>
   </div>
 </section>
+
 
 
 

@@ -29,7 +29,7 @@ export default function Footer() {
     <footer className="relative bg-gradient-to-br from-white via-gray-50 to-amber-50 border-t border-gray-200">
       <div className="absolute inset-0 bg-[url('/pattern-light.svg')] bg-cover opacity-5" />
 
-      <div className="relative max-w-6xl mx-auto px-6 py-16">
+      <div className="relative  mx-auto px-6 py-16">
         {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
           {/* Brand Section */}
