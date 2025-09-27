@@ -39,12 +39,14 @@ export default function HomeLocation() {
               img: "/welcomheritage-mandir.jpg",
               desc: "Operating since 2019, this 200-year-old heritage palace blends royal splendor with SR Holistic Wellness spa therapies.",
               link: "https://www.google.com/maps?q=WelcomHeritage+Mandir+Palace+Jaisalmer",
+              addressText: "Gandhi Chowk Rd, Sadar Bazar, Jaisalmer, Kishan Ghat, Rajasthan 345001",
             },
             {
               title: "Welcome to Heritage Mohangarh Fort",
               img: "/welcomeheritage-mohangarh.jpg",
               desc: "Since 2019, guests at this yellow-sandstone fort immerse themselves in regal ambience with our holistic spa rituals.",
               link: "https://www.google.com/maps?q=WelcomHeritage+Mohangarh+Fort+Jaisalmer",
+              addressText: "Mohangarh Rd, Shri Mohangarh, Mohangarh, Rajasthan 345033",
             },
           ].map((item, i) => (
             <motion.div
@@ -81,7 +83,7 @@ export default function HomeLocation() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs font-medium text-blue-700"
                   >
-                    <MapPin className="h-3 w-3" /> Jaisalmer, Rajasthan
+                    <MapPin className="h-3 w-3" /> {item.addressText}
                   </a>
                 </div>
               </div>
