@@ -137,7 +137,7 @@ export const therapiesData = [
           "Complements meditation and breathwork",
         ],
         bestFor: ["Energy alignment", "Emotional reset", "Mind-body connection"],
-        image: "/Chakra balancing.png?height=200&width=300",
+        image: "/chakrabalancing1.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Volcanic Hot Lava Stone Therapy"),
@@ -155,7 +155,7 @@ export const therapiesData = [
           "Eases stress-related headaches",
         ],
         bestFor: ["Cold-sensitive clients", "Persistent stiffness", "Deep relaxation with heat"],
-        image: "/hot stone (2).png?height=200&width=300",
+        image: "/hotlavastone1.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("SHIATSU MASSAGE"),
@@ -191,7 +191,7 @@ export const therapiesData = [
           "Oil-free and comfortable for most skin types",
         ],
         bestFor: ["Flexibility gains", "Sedentary lifestyle", "Full-body stretch"],
-        image: "/Signature Foot massage.png?height=200&width=300",
+        image: "/thaiyogastr1.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Traditional Hawaiian Healing Massage"),
@@ -209,7 +209,7 @@ export const therapiesData = [
           "Induces a meditative relaxation state",
         ],
         bestFor: ["Emotional soothing", "Full-body flow", "Gentle, nurturing touch"],
-        image: "/hawaaiian-lomi-lomi.jpg?height=200&width=300",
+        image: "/lomilomi.avif?height=200&width=300",
       },
       {
         id: generateTherapyId("Traditional Balinese Therapy"),
@@ -257,7 +257,7 @@ export const therapiesData = [
           "Combines exfoliation with relaxing massage",
         ],
         bestFor: ["Dull skin", "Pre-event glow", "Dryness and rough patches"],
-        image: "/Signature Foot massage.png?height=200&width=300",
+        image: "/andamansea.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Moroccan Scrub + Coffee Bean Massage"),
@@ -292,7 +292,7 @@ export const therapiesData = [
           "Aromatic oils leave skin hydrated and soft",
         ],
         bestFor: ["Rough skin", "Seasonal skin refresh", "Quick glow-up"],
-        image: "/Himalaya pink salt srcub.png?height=200&width=300",
+        image: "/pinksalt1.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("WALNUT BODY SCRUB"),
@@ -486,7 +486,7 @@ export const therapiesData = [
           "Rebalances energy through the back body",
         ],
         bestFor: ["Back stiffness", "Gentle mobility work", "Rebalancing the spine"],
-        image: "/Signature back massage.png?height=200&width=300",
+        image: "/signaturestretchng1.jpg?height=200&width=300",
       },
       {
         id: generateTherapyId("Champi Head & Back Massage"),

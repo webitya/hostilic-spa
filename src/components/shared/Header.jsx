@@ -90,7 +90,7 @@ export default function Header() {
               <span className="text-gray-900 text-sm font-bold leading-tight font-sans tracking-tight">
                 SR Holistic Wellness
               </span>
-              <span className="text-xs text-amber-600 font-medium hidden sm:block">Relax • Body • Mind & Soul</span>
+              <span className="text-xs text-amber-600 font-medium hidden sm:block">Relax your body mind & soul</span>
             </div>
           </Link>
 

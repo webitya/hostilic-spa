@@ -4,15 +4,18 @@ import { motion } from "framer-motion";
 
 export default function HomeGallery() {
   const galleryItems = [
-    { src: "/g8.webp", title: "Therapy" },
+    { src: "/g8.webp", title: "Holistic Treatment / Massage" },
     { src: "/g6.webp", title: "Couple Massage" },
     { src: "/g7.webp", title: "Face Care / Facial" },
     { src: "/g9.webp", title: "Foot Reflexology" },
-    { src: "/g5.webp", title: "Sonna Bath" },
-    { src: "/g4.webp", title: "Steam Bath" },
-    { src: "/g1.webp", title: "Yoga" },
-    { src: "/g2.webp", title: "Meditation" },
-    { src: "/g3.webp", title: "Living with Aroma Essential" },
+    { src: "/g4.webp", title: "Sonna Bath" },
+    { src: "/g5.webp", title: "Steam Bath" },
+    { src: "/yoga1.jpg", title: "Yoga" },
+    { src: "/meditation.jpg", title: "Meditation" },
+    { src: "/livingwitharomaessentias.jpg", title: "Living with Aroma Essential" },
+      { src: "/ayurvedicpanchkarma.jpg", title: "Ayurvedic Panchkarma Treatments" },
+    { src: "/pedicure.jpg", title: "Pedicure / Menucure" },
+    { src: "/salonservices.jpg", title: "Salon Services" },
   ];
 
   return (
