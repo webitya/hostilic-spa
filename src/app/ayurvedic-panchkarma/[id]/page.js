@@ -90,7 +90,7 @@ export default function AyurvedicTherapyDetailPage() {
             </div>
 
             {/* Benefits */}
-            {therapy.tags && (
+            {/* {therapy.tags && (
               <div>
                 <h2 className="text-2xl font-bold text-green-800 mb-4">Key Benefits</h2>
                 <div className="flex flex-wrap gap-3">
@@ -105,7 +105,7 @@ export default function AyurvedicTherapyDetailPage() {
                   ))}
                 </div>
               </div>
-            )}
+            )} */}
           </div>
 
           {/* Booking Sidebar */}
