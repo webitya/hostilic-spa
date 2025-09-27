@@ -33,7 +33,6 @@ export default function HomeLocation() {
 
         {/* Cards */}
         <div className="flex flex-col gap-6">
-          {/* Card Component */}
           {[
             {
               title: "Welcome to Heritage Mandir Palace",
@@ -65,6 +64,7 @@ export default function HomeLocation() {
                   className="w-full h-full object-cover"
                 />
               </div>
+
               {/* Content */}
               <div className="p-5 md:w-1/2 flex flex-col justify-center text-left">
                 <h3 className="text-[#27545b] font-semibold text-lg mb-1">
@@ -73,14 +73,17 @@ export default function HomeLocation() {
                 <p className="text-xs leading-relaxed mb-3 text-[#5C5C5C]">
                   {item.desc}
                 </p>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs font-medium text-blue-700"
-                >
-                  <MapPin className="h-3 w-3" /> Jaisalmer, Rajasthan
-                </a>
+                <div className="flex items-center gap-1 text-xs font-medium text-blue-700">
+                  <span className="font-semibold text-[#3A2F24]">Address:</span>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-medium text-blue-700"
+                  >
+                    <MapPin className="h-3 w-3" /> Jaisalmer, Rajasthan
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
