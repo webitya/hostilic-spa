@@ -40,6 +40,7 @@ export default function HomeLocation() {
               desc: "Operating since 2019, this 200-year-old heritage palace blends royal splendor with SR Holistic Wellness spa therapies.",
               link: "https://www.google.com/maps?q=WelcomHeritage+Mandir+Palace+Jaisalmer",
               addressText: "Gandhi Chowk Rd, Sadar Bazar, Jaisalmer, Kishan Ghat, Rajasthan 345001",
+              whatsappMsg: "Hello, I am interested in spa services at WelcomHeritage Mandir Palace, Jaisalmer.",
             },
             {
               title: "Welcome to Heritage Mohangarh Fort",
@@ -47,6 +48,7 @@ export default function HomeLocation() {
               desc: "Since 2019, guests at this yellow-sandstone fort immerse themselves in regal ambience with our holistic spa rituals.",
               link: "https://www.google.com/maps?q=WelcomHeritage+Mohangarh+Fort+Jaisalmer",
               addressText: "Mohangarh Rd, Shri Mohangarh, Mohangarh, Rajasthan 345033",
+              whatsappMsg: "Hello, I would like to know more about spa services at WelcomHeritage Mohangarh Fort, Jaisalmer.",
             },
           ].map((item, i) => (
             <motion.div
@@ -75,7 +77,9 @@ export default function HomeLocation() {
                 <p className="text-xs leading-relaxed mb-3 text-[#5C5C5C]">
                   {item.desc}
                 </p>
-                <div className="flex items-center gap-1 text-xs font-medium text-blue-700">
+
+                {/* Address */}
+                <div className="flex items-center gap-1 text-xs font-medium text-blue-700 mb-3">
                   <span className="font-semibold text-[#3A2F24]">Address:</span>
                   <a
                     href={item.link}
@@ -86,6 +90,31 @@ export default function HomeLocation() {
                     <MapPin className="h-3 w-3" /> {item.addressText}
                   </a>
                 </div>
+
+                {/* WhatsApp Button */}
+               {/* WhatsApp Button */}
+<div className="flex gap-3 mt-3">
+  {/* Call Now Button */}
+  <a
+    href="tel:+919876543210" // <-- replace with your number
+    className="inline-flex items-center w-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg shadow-md transition"
+  >
+    Call Now
+  </a>
+
+  {/* WhatsApp Button */}
+  <a
+    href={`https://wa.me/916306366978?text=${encodeURIComponent(item.whatsappMsg)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center w-auto bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-4 py-2 rounded-lg shadow-md transition"
+  >
+    Chat on WhatsApp
+  </a>
+</div>
+
+
+
               </div>
             </motion.div>
           ))}
