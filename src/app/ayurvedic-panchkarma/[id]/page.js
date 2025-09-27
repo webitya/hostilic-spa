@@ -76,7 +76,7 @@ export default function AyurvedicTherapyDetailPage() {
 
               {therapy.subPoints && (
                 <div className="mt-6">
-                  <h3 className="text-xl font-semibold text-green-700 mb-3">Treatments Benefits:</h3>
+                  <h3 className="text-xl font-semibold text-green-700 mb-3">Treatment Benefits:</h3>
                   <ul className="space-y-2">
                     {therapy.subPoints.map((point, index) => (
                       <li key={index} className="flex items-start gap-3">
