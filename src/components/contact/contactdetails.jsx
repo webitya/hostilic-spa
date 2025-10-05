@@ -518,7 +518,7 @@ export default function ContactPage() {
               <EmailIcon style={iconStyle} />
               <div>
                 <p style={contactLabelStyle}>Email</p>
-                <p style={contactValueStyle}>srholisticspa@gmail.com</p>
+                <p style={contactValueStyle}>Srholisticwellness@gmail.com</p>
               </div>
             </div>
 

@@ -117,12 +117,12 @@ export default function Footer() {
                 className="flex items-center gap-3 text-gray-600 hover:text-amber-600 transition-colors duration-200"
               >
                 <EmailIcon className="text-lg" />
-                <span>info@srwellness.com</span>
+                <span>Srholisticwellness@gmail.com</span>
               </a>
 
               <div className="flex items-center gap-3 text-gray-600">
                 <LocationOnIcon className="text-lg" />
-                <span>Mumbai, India</span>
+                <span>HNO. 212. Munirka. New Delhi:110067</span>
               </div>
             </div>
           </motion.div>
