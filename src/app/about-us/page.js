@@ -78,7 +78,7 @@ export default function AboutUsPage() {
             <div className="relative">
               <div className="bg-white rounded-lg shadow-sm p-4 border border-stone-200">
                 <Image
-                  src="/s1.jpeg?height=300&width=600"
+                  src="/s1.jpeg"
                   width={600}
                   height={400}
                   alt="Relaxing spa environment at SR Holistic Wellness"
@@ -127,127 +127,127 @@ export default function AboutUsPage() {
       </section>
 
       {/* Methodology */}
-<section
-  id="methodology"
-  className="py-16 bg-gradient-to-b from-stone-50 via-white to-stone-100 relative"
-  aria-labelledby="methodology-heading"
->
-  <div className="max-w-6xl mx-auto px-4 lg:px-8">
-    {/* Section Heading */}
-    <div className="text-center mb-12">
-      <h2
-        id="methodology-heading"
-        className="text-3xl lg:text-4xl font-light text-stone-900 mb-3 tracking-wide drop-shadow-sm"
+      <section
+        id="methodology"
+        className="py-16 bg-gradient-to-b from-stone-50 via-white to-stone-100 relative"
+        aria-labelledby="methodology-heading"
       >
-        Our Methodology
-      </h2>
-      <div className="w-16 h-1 mx-auto rounded-full bg-gradient-to-r from-green-300 to-purple-300"></div>
-      <p className="mt-4 text-stone-800 text-sm lg:text-base max-w-2xl mx-auto font-light leading-relaxed">
-        A balanced approach combining spiritual alignment and grounding practices
-        for holistic growth and clarity.
-      </p>
-    </div>
-
-    {/* Methodology Grid */}
-    <div className="grid lg:grid-cols-2 gap-8">
-      {/* S-Meaning */}
-      <article className="relative bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/r.jpg"
-            fill
-            alt="S-Meaning illustration"
-            className="object-cover opacity-40 group-hover:opacity-50 transition-opacity"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"></div>
-        </div>
-
-        <div className="relative z-10 p-7">
-          <div className="flex items-start gap-4 mb-5">
-            <div className="p-3 bg-orange-100 rounded-xl shadow-inner">
-              <Crown className="w-5 h-5 text-orange-700" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-stone-900 mb-1 drop-shadow-sm">
-                S-Meaning
-              </h3>
-              <p className="text-xs text-orange-700 font-medium tracking-wide drop-shadow-sm">
-                Crown Chakra Alignment (Sahasrara)
-              </p>
-            </div>
+        <div className="max-w-6xl mx-auto px-4 lg:px-8">
+          {/* Section Heading */}
+          <div className="text-center mb-12">
+            <h2
+              id="methodology-heading"
+              className="text-3xl lg:text-4xl font-light text-stone-900 mb-3 tracking-wide drop-shadow-sm"
+            >
+              Our Methodology
+            </h2>
+            <div className="w-16 h-1 mx-auto rounded-full bg-gradient-to-r from-green-300 to-purple-300"></div>
+            <p className="mt-4 text-stone-800 text-sm lg:text-base max-w-2xl mx-auto font-light leading-relaxed">
+              A balanced approach combining spiritual alignment and grounding practices
+              for holistic growth and clarity.
+            </p>
           </div>
 
-          <p className="text-sm text-stone-800 leading-relaxed font-light mb-5 drop-shadow-sm">
-            S-Meaning channels energy through the Crown Chakra—the gateway to
-            spiritual awakening and universal connection. This process, known as
-            S-Mining, supports clarity, higher consciousness, and purpose.
-          </p>
+          {/* Methodology Grid */}
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* S-Meaning */}
+            <article className="relative bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <Image
+                  src="/r.jpg"
+                  fill
+                  alt="S-Meaning illustration"
+                  className="object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"></div>
+              </div>
 
-          <div className="flex flex-wrap gap-2">
-            {["Spiritual Awakening", "Universal Connection", "Higher Consciousness"].map(
-              (tag, i) => (
-                <span
-                  key={i}
-                  className="px-3 py-1 bg-purple-50 text-stone-900 rounded-full text-xs font-medium border border-purple-200 shadow-sm"
-                >
-                  {tag}
-                </span>
-              )
-            )}
+              <div className="relative z-10 p-7">
+                <div className="flex items-start gap-4 mb-5">
+                  <div className="p-3 bg-orange-100 rounded-xl shadow-inner">
+                    <Crown className="w-5 h-5 text-orange-700" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-stone-900 mb-1 drop-shadow-sm">
+                      S-Meaning
+                    </h3>
+                    <p className="text-xs text-orange-700 font-medium tracking-wide drop-shadow-sm">
+                      Crown Chakra Alignment (Sahasrara)
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-sm text-stone-800 leading-relaxed font-light mb-5 drop-shadow-sm">
+                  S-Meaning channels energy through the Crown Chakra—the gateway to
+                  spiritual awakening and universal connection. This process, known as
+                  S-Mining, supports clarity, higher consciousness, and purpose.
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {["Spiritual Awakening", "Universal Connection", "Higher Consciousness"].map(
+                    (tag, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-purple-50 text-stone-900 rounded-full text-xs font-medium border border-purple-200 shadow-sm"
+                      >
+                        {tag}
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
+            </article>
+
+            {/* R-Meaning */}
+            <article className="relative bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <Image
+                  src="/s.jpg"
+                  fill
+                  alt="R-Meaning illustration"
+                  className="object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"></div>
+              </div>
+
+              <div className="relative z-10 p-7">
+                <div className="flex items-start gap-4 mb-5">
+                  <div className="p-3 bg-orange-100 rounded-xl shadow-inner">
+                    <User className="w-5 h-5 text-orange-700" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-stone-900 mb-1 drop-shadow-sm">
+                      R-Meaning
+                    </h3>
+                    <p className="text-xs text-orange-700 font-medium tracking-wide drop-shadow-sm">
+                      Root Chakra Activation (Muladhara)
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-sm text-stone-800 leading-relaxed font-light mb-5 drop-shadow-sm">
+                  R-Meaning grounds and stabilizes by activating the Root Chakra—the
+                  foundation of security and presence. It cultivates strength,
+                  resilience, and a deeper connection to the body and Earth.
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {["Grounding", "Stability", "Earth Connection"].map((tag, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 bg-green-50 text-stone-900 rounded-full text-xs font-medium border border-green-200 shadow-sm"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </article>
-
-      {/* R-Meaning */}
-      <article className="relative bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/s.jpg"
-            fill
-            alt="R-Meaning illustration"
-            className="object-cover opacity-40 group-hover:opacity-50 transition-opacity"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-stone-900/20 via-white/85 to-white/95"></div>
-        </div>
-
-        <div className="relative z-10 p-7">
-          <div className="flex items-start gap-4 mb-5">
-            <div className="p-3 bg-orange-100 rounded-xl shadow-inner">
-              <User className="w-5 h-5 text-orange-700" />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-stone-900 mb-1 drop-shadow-sm">
-                R-Meaning
-              </h3>
-              <p className="text-xs text-orange-700 font-medium tracking-wide drop-shadow-sm">
-                Root Chakra Activation (Muladhara)
-              </p>
-            </div>
-          </div>
-
-          <p className="text-sm text-stone-800 leading-relaxed font-light mb-5 drop-shadow-sm">
-            R-Meaning grounds and stabilizes by activating the Root Chakra—the
-            foundation of security and presence. It cultivates strength,
-            resilience, and a deeper connection to the body and Earth.
-          </p>
-
-          <div className="flex flex-wrap gap-2">
-            {["Grounding", "Stability", "Earth Connection"].map((tag, i) => (
-              <span
-                key={i}
-                className="px-3 py-1 bg-green-50 text-stone-900 rounded-full text-xs font-medium border border-green-200 shadow-sm"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
