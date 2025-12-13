@@ -81,8 +81,8 @@ export default function AboutHero() {
           className="flex justify-center md:justify-end"
         >
           <Image
-            src="/welcomheritage-mandir.jpg" // 👉 replace with your actual image in /public folder
-            alt="SR Holistic Wellness"
+            src="/g6.webp"
+            alt="Couple Massage at SR Holistic Wellness"
             width={500}
             height={500}
             className="rounded-2xl shadow-lg object-cover"
