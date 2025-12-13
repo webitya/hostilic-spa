@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { MapPin, Phone, MessageCircle, Clock, Calendar, ArrowRight } from "lucide-react";
+import { MapPin, MessageCircle, Clock } from "lucide-react";
 
 export default function SpaLocationPage() {
   const locations = [
