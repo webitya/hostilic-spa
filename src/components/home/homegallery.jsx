@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function HomeGallery() {
   const galleryItems = [
@@ -71,10 +72,18 @@ export default function HomeGallery() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#7b4b1a] mb-8 sm:mb-12"
+          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#7b4b1a] mb-3 sm:mb-4"
         >
           Explore Our Wellness Space
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-lg sm:text-xl font-medium text-[#a47148] mb-10 sm:mb-12 font-serif italic"
+        >
+          Book Our Spa appointment to get exclusive offer
+        </motion.p>
 
         {/* responsive grid - replacing images with text cards */}
         <motion.div
@@ -105,12 +114,24 @@ export default function HomeGallery() {
                   {item.description}
                 </p>
 
-                <Link
-                  href={item.href}
-                  className="inline-flex items-center text-[#9c6b30] font-medium text-sm hover:text-[#7b4b1a] group-hover:translate-x-1 transition-all mt-auto"
-                >
-                  Learn More <ArrowRight className="w-4 h-4 ml-1.5" />
-                </Link>
+                <div className="mt-auto flex items-center justify-between gap-3 pt-4 border-t border-[#f0e4d4]">
+                  <Link
+                    href={item.href}
+                    className="inline-flex items-center justify-center px-4 py-2 border border-[#9c6b30] text-[#9c6b30] rounded-full text-xs font-bold uppercase tracking-wide hover:bg-[#9c6b30] hover:text-white transition-all duration-300"
+                  >
+                    View Details
+                  </Link>
+
+                  <a
+                    href="https://wa.me/916306366978"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-4 py-2 bg-[#25D366] text-white rounded-full text-xs font-bold uppercase tracking-wide hover:bg-[#20bd5a] transition-colors shadow-sm gap-2"
+                    aria-label="Book Now on WhatsApp"
+                  >
+                    <WhatsAppIcon style={{ fontSize: 18 }} /> Book Now
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
