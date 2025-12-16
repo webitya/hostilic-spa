@@ -16,43 +16,64 @@ export default function Footer() {
     { icon: LinkedInIcon, href: "https://linkedin.com", label: "LinkedIn" },
   ]
 
-  const pageLinks = [
+  const exploreLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Holistic Therapies", href: "/holistic-therapies" },
+    { name: "About Us", href: "/about-us" },
+    { name: "Services", href: "/services" },
+    { name: "Shop", href: "/spa-products" },
+    { name: "Contact Us", href: "/contact" },
+  ]
+
+  const wellnessLinks = [
+    { name: "Holistic Therapy", href: "/therapies" },
     { name: "Ayurvedic Panchkarma", href: "/ayurvedic-panchkarma" },
-    { name: "Partner With Us", href: "/partner-with-us" },
-    { name: "Contact", href: "/contact" },
+    { name: "Spa Location", href: "/spa-location" },
+    { name: "Partner with us", href: "/partner-with-us" },
   ]
 
   return (
-    <footer className="relative bg-gradient-to-br from-white via-gray-50 to-amber-50 border-t border-gray-200">
-      <div className="absolute inset-0 bg-[url('/pattern-light.svg')] bg-cover opacity-5" />
+    <footer className="relative bg-[#2c2018] border-t border-[#3d2e24] overflow-hidden">
+      {/* Decorative Top Gradient */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#a47148] to-transparent opacity-80" />
 
-      <div className="relative  mx-auto px-6 py-16">
-        {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
-          {/* Brand Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <img src="/logo1.png" alt="SR Holistic Wellness" className="h-12 w-12 object-contain rounded-lg shadow-sm" />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">SR Holistic Wellness</h3>
-                <p className="text-sm text-amber-600 font-medium tracking-wide">Mind • Body • Soul</p>
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="footer-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+              <circle cx="20" cy="20" r="1.5" fill="#a47148" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#footer-pattern)" />
+        </svg>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-6 py-16 lg:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+
+          {/* 1. Brand Section */}
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex items-center gap-3"
+            >
+              <div className="bg-white p-1.5 rounded-lg shadow-md">
+                <img src="/logo1.png" alt="SR Holistic Wellness" className="h-10 w-10 object-contain" />
               </div>
-            </div>
+              <div className="text-[#fffaf0]">
+                <h3 className="text-xl font-bold font-serif leading-none tracking-wide">SR Holistic</h3>
+                <span className="text-[0.65rem] text-[#a47148] uppercase tracking-[0.2em] font-medium block mt-1">Wellness</span>
+              </div>
+            </motion.div>
 
-            <p className="text-gray-600 leading-relaxed mb-8 max-w-sm">
-              Experience harmony through ancient healing practices and modern wellness therapies.
+            <p className="text-[#d6c0a8] text-sm leading-relaxed max-w-xs font-light">
+              A sanctuary where ancient healing meets modern luxury. Restore harmony to your mind, body, and soul with our curated holistic therapies.
             </p>
 
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-3 pt-2">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon
                 return (
@@ -61,95 +82,129 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-gray-500 hover:text-amber-600 hover:shadow-lg transition-all duration-300"
-                    whileHover={{ scale: 1.15, rotate: 3 }}
+                    className="w-9 h-9 bg-[#3d2e24] rounded-full flex items-center justify-center text-[#d6c0a8] hover:bg-[#a47148] hover:text-white transition-all duration-300 border border-[#4a3b32]"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
                     aria-label={social.label}
                   >
-                    <IconComponent className="text-lg" />
+                    <IconComponent style={{ fontSize: 18 }} />
                   </motion.a>
                 )
               })}
             </div>
-          </motion.div>
+          </div>
 
-          {/* Quick Links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-6">Quick Links</h4>
+          {/* 2. Explore Links */}
+          <div>
+            <h4 className="text-[#fffaf0] font-serif text-lg font-medium mb-6 relative inline-block">
+              Explore
+              <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#a47148] rounded-full"></span>
+            </h4>
             <ul className="space-y-3">
-              {pageLinks.map((link, index) => (
+              {exploreLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="relative text-gray-600 hover:text-amber-600 transition-colors duration-200 group"
+                    className="text-[#b09b88] hover:text-[#a47148] hover:pl-1 transition-all duration-300 text-sm flex items-center gap-2 group"
                   >
+                    <span className="w-1 h-1 rounded-full bg-[#5a4a42] group-hover:bg-[#a47148] transition-colors" />
                     {link.name}
-                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-600 transition-all duration-300 group-hover:w-full" />
                   </Link>
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h4 className="text-lg font-semibold text-gray-900 mb-6">Contact</h4>
-            <div className="space-y-4 text-sm">
+          {/* 3. Wellness & Locations */}
+          <div>
+            <h4 className="text-[#fffaf0] font-serif text-lg font-medium mb-6 relative inline-block">
+              Wellness
+              <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#a47148] rounded-full"></span>
+            </h4>
+            <ul className="space-y-3">
+              {wellnessLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="text-[#b09b88] hover:text-[#a47148] hover:pl-1 transition-all duration-300 text-sm flex items-center gap-2 group"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-[#5a4a42] group-hover:bg-[#a47148] transition-colors" />
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* 4. Contact Info */}
+          <div>
+            <h4 className="text-[#fffaf0] font-serif text-lg font-medium mb-6 relative inline-block">
+              Contact
+              <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-[#a47148] rounded-full"></span>
+            </h4>
+            <div className="space-y-5">
               <a
                 href="tel:+916306366978"
-                className="flex items-center gap-3 text-gray-600 hover:text-amber-600 transition-colors duration-200"
+                className="flex items-start gap-3 text-[#b09b88] hover:text-[#a47148] transition-colors group"
               >
-                <PhoneIcon className="text-lg" />
-                <span>+91 6306366978</span>
+                <div className="p-2 bg-[#3d2e24] rounded-full group-hover:bg-[#4a3b32] transition-colors mt-[-4px]">
+                  <PhoneIcon style={{ fontSize: 16 }} className="text-[#a47148]" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs text-[#8c6b4a] font-bold uppercase tracking-wider mb-0.5">Call Us</span>
+                  <span className="text-sm">+91 6306366978</span>
+                </div>
               </a>
 
               <a
-                href="mailto:info@srwellness.com"
-                className="flex items-center gap-3 text-gray-600 hover:text-amber-600 transition-colors duration-200"
+                href="mailto:Srholisticwellness@gmail.com"
+                className="flex items-start gap-3 text-[#b09b88] hover:text-[#a47148] transition-colors group"
               >
-                <EmailIcon className="text-lg" />
-                <span>Srholisticwellness@gmail.com</span>
+                <div className="p-2 bg-[#3d2e24] rounded-full group-hover:bg-[#4a3b32] transition-colors mt-[-4px]">
+                  <EmailIcon style={{ fontSize: 16 }} className="text-[#a47148]" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs text-[#8c6b4a] font-bold uppercase tracking-wider mb-0.5">Email Us</span>
+                  <span className="text-sm">Srholisticwellness@gmail.com</span>
+                </div>
               </a>
 
-              <div className="flex items-center gap-3 text-gray-600">
-                <LocationOnIcon className="text-lg" />
-                <span>HNO. 212. Munirka. New Delhi:110067</span>
+              <div className="flex items-start gap-3 text-[#b09b88] group">
+                <div className="p-2 bg-[#3d2e24] rounded-full mt-[-4px]">
+                  <LocationOnIcon style={{ fontSize: 16 }} className="text-[#a47148]" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs text-[#8c6b4a] font-bold uppercase tracking-wider mb-0.5">Visit Us</span>
+                  <span className="text-sm leading-snug">HNO. 212. Munirka.<br />New Delhi: 110067</span>
+                </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="pt-8 border-t border-gray-200">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-center text-sm text-gray-500 tracking-wide leading-relaxed">
-              © {new Date().getFullYear()} <span className="text-gray-700 font-semibold">SR Holistic Wellness</span> — All Rights Reserved.  
-              <span className="mx-1 text-gray-400">|</span>
-              <span className="text-gray-600">Built, Boosted & Branded by</span>
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-[#3d2e24]">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <p className="text-xs text-[#8c6b4a] tracking-wide">
+              © {new Date().getFullYear()} <span className="text-[#d6c0a8] font-medium">SR Holistic Wellness</span>. All Rights Reserved.
+            </p>
+
+            <p className="text-xs text-[#8c6b4a] flex items-center justify-center gap-1">
+              Built by
               <a
                 href="https://nextbizdigital.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-1 font-bold text-blue-800 hover:text-blue-600 underline underline-offset-4 transition-all duration-300"
+                className="font-bold text-[#a47148] hover:text-[#d6c0a8] transition-colors"
               >
                 NextBiz Digital
               </a>
             </p>
 
-            <div className="flex items-center gap-6 text-sm">
-              <Link href="/privacy" className="text-gray-500 hover:text-amber-600 transition-colors duration-200">
+            <div className="flex items-center gap-6 text-xs text-[#8c6b4a]">
+              <Link href="/privacy" className="hover:text-[#a47148] transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-gray-500 hover:text-amber-600 transition-colors duration-200">
+              <Link href="/terms" className="hover:text-[#a47148] transition-colors">
                 Terms of Service
               </Link>
             </div>
