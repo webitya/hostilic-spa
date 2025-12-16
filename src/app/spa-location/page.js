@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import SpaLocationCard from "@/components/locations/SpaLocationCard";
+import SpaLocationHero from "@/components/locations/SpaLocationHero";
 
 export default function SpaLocationPage() {
   const locations = [
@@ -71,35 +71,7 @@ export default function SpaLocationPage() {
   return (
     <div className="min-h-screen bg-[#fcfbf9] font-sans text-[#4a4a4a]">
       {/* Hero Section */}
-      <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/spa-hero-background.jpg"
-            alt="Spa Locations Hero"
-            fill
-            className="object-cover brightness-[0.7]"
-            priority
-          />
-        </div>
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl">
-          <motion.span
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="inline-block px-3 py-1 mb-4 border border-white/30 rounded-full text-xs tracking-widest uppercase backdrop-blur-sm"
-          >
-            Find Your Sanctuary
-          </motion.span>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl md:text-5xl font-bold mb-6 font-serif"
-          >
-            Our Wellness Destinations
-          </motion.h1>
-        </div>
-      </section>
+      <SpaLocationHero />
 
       {/* Locations List */}
       <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
